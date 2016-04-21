@@ -1,0 +1,126 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM               |
+|               NODE.TPL                      |
+|       CONTENU ACTUALITES        |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    #colonne-1.contenu-actu{order:1;}
+    #colonne-2.contenu-actu{order:2;}
+    #colonne-3.contenu-actu{order:3;}
+    @include breakpoint ($desktop){}
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur .conteneur-flex{
+    @include breakpoint ($desktop){
+        #colonne-2.contenu-actu{
+            @include border-vert-violet;
+        }
+        }
+    
+}
+/*######-------- ||| STYLE ||| --------######*/
+#colonne-1.contenu-actu {
+    h3{
+    text-align: center;
+    color: $vert;
+    font-family: arista,Trebuchet MS, sans-serif;
+    font-size: larger;
+    margin: em(5px);
+
+}
+}
+#table_infos_plus{
+    margin: 0 auto;
+    width: em(170px);
+    background: transparent url('../images/bg_infos_plus_vdl.jpg') no-repeat left 0px;/*25px*/
+    tbody{
+        border: 0;
+    }
+    h3{
+        font-family: arista,Trebuchet MS, sans-serif;
+        text-align: center;
+        color: #01ABCF;
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    tr{
+        background: transparent url('//../images/sep_infos_plus_vdl.jpg') no-repeat bottom 20px;
+
+    }
+    td{
+        padding: 3px 0 6px 10px;
+        text-align: center;
+    }
+    hr{
+        border-bottom: 1px solid #01ABCF;
+        width: 120px;
+        margin: 0 auto;
+    }
+    a{
+        color: #01ABCF;
+        text-decoration: none;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .filefield-icon {
+        display: none;
+    }
+}
+#colonne-2.contenu-actu{
+    p{
+        padding: 0.2em;
+    }
+    h1{
+        color: $violet;
+        font-size: larger;
+        line-height: normal;
+        margin: 0;
+    }
+}
+/*---- Galerie images au choix -------*/
+#bloc-galerie-vdl{
+    margin: 0;
+    padding: 0;
+    
+    h3{
+        text-align: center;
+        font-family: $AristaFont;
+        font-size: 2.0em;
+        margin: em(5px);
+        color: $violet;
+
+    }
+    a{
+        background:none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .overlay-inner p{
+        color: white;
+    }
+    .vignettes-zoom a, .vignettes-zoom a:hover{
+        background: 0;
+        text-decoration: none;
+        -moz-box-shadow: none ;
+        -webkit-box-shadow: none ;
+        box-shadow: none ;
+        color: none;
+        img{
+            border: 3px solid $vert;
+        }
+    }
+
+}

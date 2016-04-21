@@ -1,0 +1,133 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE LYCEE                     |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    #colonne-1.page-lycee {order:1;}
+    #colonne-1.page-lycee span{display: none;}
+    #colonne-2.page-lycee {order:1;}
+    #colonne-3.page-lycee {order:2;}
+    @include breakpoint ($desktop){
+    #colonne-1.page-lycee {order:1;}
+    #colonne-1.page-lycee span{display: initial;}
+    #colonne-2.page-lycee {order:2;}
+    #colonne-3.page-lycee {order:3;}
+    }
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur .conteneur-flex{
+    @include breakpoint ($desktop){
+        #colonne-2.page-lycee{@include border-vert-violet;}
+    }
+    
+}
+
+h1.titre_pl{
+    font-size: 24px;
+    color: #911381;
+    line-height: 1.0em
+}
+h1.titre_pl a{}
+h1.titre_pl a:hover{}
+/*######-------- COLONNE G1 --------######*/
+#colonne-1.page-lycee {
+    h2{}h3{}h4{}p{}ul{}
+    img{   @include cadre-ombre();}
+    a{&:hover{}}
+    h2 a{&:hover{}}
+    h3 a{&:hover{}}
+    h4 a{&:hover{}}
+    .imagecache{
+        //pour centrer l'image
+        margin: 0 auto;
+        display: block;
+        width: span(2);
+        @include breakpoint ($desktop){
+            width: span(5.3/2);
+        }
+    }
+}
+
+/*######-------- COLONNE G2 --------######*/
+#colonne-2.page-lycee{
+     h2{color: $vert;padding: em(5px);}
+h3{color: #911381;padding: 5px;}
+h4{padding: 5px; color: #F29803;}
+p{ padding: 5px;}
+ul{padding: 5px;}
+a img { background: 0;}
+a{
+    background: #AEC821;
+    color: #EFEFEF;
+    text-decoration: none;
+    padding: 3px;
+    margin: 5px;
+    &:hover{
+    color: #AEC821;
+    background: none;
+     -moz-box-shadow: #AAAAAA 0px 0px 5px ;
+    -webkit-box-shadow: #AAAAAA 0px 0px 5px;
+    box-shadow: #AAAAAA 0px 0px 5px;
+}
+}
+iframe#slideshare-embed, iframe{@include adaptable-img;}
+}
+/*------ LISTE VUE ACTU LYCEE (Colonne G3) ---------*/
+#colonne-3 #bloc-actu-lycee{
+    width: 90%;
+    margin: 0 auto;
+    h3{
+    color: $violet;
+    font-family: arista,Trebuchet MS, sans-serif;
+    font-size: x-large;
+    margin:em(5px);
+    display: block;
+    text-align: center;
+
+}
+}
+.liste-actu-lycee {
+    ul{
+    margin: 0 auto;
+    
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    list-style: none;
+    padding: em(5px);
+    font-size: small;
+    @include arrondis;
+}
+ul,p{
+    line-height: normal;
+    }
+    p{
+        margin: 0.3em;
+    }
+}
+
+
+.element-actu-lycee{
+    width: 95%;
+    margin: 0 auto;
+    a{
+    color:  $gris-anthracite;
+    background: $gris-clair;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    padding: em(2px);
+}
+a:hover{
+    background: $vert;
+    color: white;
+}
+}

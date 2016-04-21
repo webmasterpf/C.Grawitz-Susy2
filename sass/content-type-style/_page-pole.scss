@@ -1,0 +1,158 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|           CONTENU VDL                |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+
+
+.vdl-galerie-image .gallery-slides
+{
+    img{@include adaptable-img;}
+}
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    .titre-flex{order:0;}
+    #bloc-gauche-pole{}
+    #bloc-centre-pole {}
+    #bloc-droit-pole {}
+    @include breakpoint ($desktop){
+        .titre-flex{order:0;max-height: 4em;}
+        #bloc-gauche-pole{order:1;}
+        #bloc-centre-pole {order:2;}
+        #bloc-droit-pole {order:3;}
+    }
+}
+
+/*######-------- ||| STYLE ||| --------######*/
+h1.title-page-bloc{
+    font-size: xx-large;
+    font-family: arista,Trebuchet MS, sans-serif;
+    text-align: center;
+    color: $violet;
+    text-transform: uppercase;
+    
+}
+h3.block-title{
+    font-size: 18px;
+    color: $vert;
+    text-align: center;
+    text-transform: uppercase;
+    margin: em(20px) 0;
+}
+#middle-content .page-pole{
+    .view-content h3{
+        color: $violet;
+        text-decoration: none;
+        padding: em(2px);
+
+    }
+    .views-field-title {
+        font-size: 14px;
+
+    }
+    .views-field-title a{
+        color: $vert;
+        text-decoration: none;
+        padding: em(2px);
+
+    }
+    .views-field-title a:hover{
+        background: $vert;
+        color: white;
+    }
+}
+
+#block-views-Formations_par_poles-block_1,
+#block-views-Formations_par_poles-block_2,
+#block-views-Formations_par_poles-block_3{
+    width: auto; 
+    display: block;
+    padding: em(71px) em(20px);    
+}
+#block-views-Formations_par_poles-block_1{
+    background: white url('../images/bg_pole_tertiaire.jpg') no-repeat top left; 
+ background-size: contain;
+}
+
+#block-views-Formations_par_poles-block_2{
+    background: white url('../images/bg_pole_services.jpg') no-repeat left em(1px);
+     background-size: contain;
+}
+#block-views-Formations_par_poles-block_3{
+    background: white url('../images/bg_pole_arts.jpg') no-repeat top left;
+     background-size: contain;
+}
+
+
+/*TABLE PAGE FORMATION PAR POLES*/
+.table_bloc_form_pole{
+    width: 98%;
+}
+
+.table_bloc_form_pole td{
+    margin: 2px 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #94127F;
+}
+/*--------------------*/
+/*POLE SERVICE LISTE*/
+#liste_formation_pole_services, #liste_formation_pole_tertiaire, #liste_formation_pole_arts{
+    background: white url('../images/bg_coin_vierge.jpg') no-repeat top left;
+    margin: 0 auto;
+    padding: em(20px) 0;
+    width: auto;
+    h3 {
+        color: $vert;
+        margin: 0 auto;
+        text-align: center;
+    }
+    view{
+        width: 99%;
+    }
+    view-content{
+        width: 80%;
+        margin: 0 auto;
+    padding: em(20px) 0;
+    }
+    table{
+        margin: 0 auto;
+        text-align: center;
+    }
+    tbody{
+        margin: 0 auto;
+        padding: 0;
+    }
+    tr{
+        padding: 0;
+    }
+    td{
+        padding: 0;
+    }
+.view-content h3{
+    color: $violet;
+    text-decoration: none;
+    padding: em(2px);
+
+}
+.views-field-title {
+   font-size: medium;
+
+}
+ .views-field-title a{
+    color: $vert;
+    text-decoration: none;
+    padding: 2px;
+
+}
+ .views-field-title a:hover{
+    background: $violet;
+    color: white;
+}
+}

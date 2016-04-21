@@ -1,0 +1,155 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       FRONTPAGE  PANORAMIQUE         |
+|--------------------------------------*/
+
+  //@include susy-breakpoint ($mobile){}
+  //@include susy-breakpoint ($desktop){}
+  //@include susy-breakpoint ($tablet){}
+
+//Code imbriqué à 100%
+body .conteneur {
+    background:transparent image-url ("bg_content_etoile.gif") no-repeat left bottom;
+
+    .HPDiapo{}
+    .HPBasGauche{}
+    .HPBasDroit{}
+}
+@include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+
+    .HPDiapo{
+        &:after{
+                content: " ";
+                display: block;
+                clear: both;}
+    }
+    .HPBasGauche{
+        //@include clearfix; 
+        @include span(first 6 of $desktopcol);}
+    .HPBasDroit{
+        //@include clearfix; 
+        @include span(last $desktopcol/2 of $desktopcol);
+        
+    }
+}
+
+@include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+
+    .HPDiapo{}
+    .HPBasGauche{@include span(first $tabletcol/2 of $tabletcol);}
+    .HPBasDroit{@include span(last $tabletcol/2 of $tabletcol);}
+
+}
+//Pour le dev, code visuel sur les blocs selon le breakpoint
+// à commenter ou supprimer pour la production
+body .conteneur {
+        
+    .HPDiapo{}
+    .HPBasGauche{background: #C8D215;}
+    .HPBasDroit{background: salmon;}
+   
+    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+        
+    .HPDiapo{}
+    .HPBasGauche{background:gold;}
+    .HPBasDroit{background:bisque;}
+    }
+   
+    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+        .HPDiapo{}
+        .HPBasGauche{background: #C8D215;}
+        .HPBasDroit{background: red;}
+    }
+}
+/********************/
+/*ZONES PAGE ACCUEIL*/
+
+.content-bottom-home {
+    table{width: auto;}
+    a {
+        //@include zocial;
+    }
+    ul{
+         @include horizontal-list;
+        li{}
+    }
+}
+
+/****************/
+.HPBasGauche, .HPBasDroit {
+
+    background: none;
+    color: black;
+    ul li {
+        list-style: square;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
+
+//Layout du diaporama dynamique (Views slideshow)
+//Code imbriqué à 100%
+aside.DiapoPanoHP{
+
+
+    #transparency{
+        display: none;
+
+    }
+    #contenu-diapo{
+        display: none;
+    }
+    img{@include adaptable-img;}
+    @include susy-breakpoint($tablet) {
+        #transparency{display: block;}
+        #contenu-diapo{display: block;}
+
+    }
+    @include susy-breakpoint($desktop) { 
+        @include clearfix;
+        max-width: container($desktopcol);
+        #transparency{display: block;}
+        #contenu-diapo{display: block;}
+        img{}
+    }
+
+}
+// Style du diaporama dynamique
+.HPDiapo .field-content{
+    
+}
+#transparency{
+
+height:em(65px);
+bottom:4.7em; 
+left:em(12px);
+position:relative;
+z-index:15;
+width: 98%;
+@include rgba-background($violet,0.6);/*Couleur et opacité du fond*/
+
+h2 {
+    color: white;
+    padding: em(5px);
+    font-family: $AristaFont;
+    font-size: larger;
+     bottom:0.75em;
+     
+  }
+  a {
+    
+    text-decoration: none;
+  }
+  p{
+      margin-top: 0.2em;
+  }
+}

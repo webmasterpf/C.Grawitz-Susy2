@@ -1,0 +1,255 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM               |
+|               NODE.TPL                      |
+|       FICHE FORMATION               |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    #colonne-1.CLASS_NAME{order:1;}
+    #colonne-2.CLASS_NAME{order:2;}
+    #colonne-3.CLASS_NAME{order:3;}
+    @include breakpoint ($desktop){}
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur {
+    @include breakpoint ($desktop){
+        #colonne-1.fiche-formation{@include border-R-vert;}
+        #colonne-2.fiche-formation{}
+        #colonne-3.fiche-formation{@include border-L-violet;}
+        }
+    
+}
+/*######-------- ||| STYLE ||| --------######*/
+
+#diapo_fiche{
+    display: none;
+    @include breakpoint ($desktop){
+        display: block;
+     margin: 0 auto;
+     padding: 0;
+     width: em(165px);
+     height: auto;
+     border: 0.5em solid #fff;
+     @include cadre-ombre();
+    
+    }
+     
+     
+}
+
+#table_fiche_formation{
+    margin: 0 auto;
+    width: 95%;
+     background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    @include arrondis;
+    tbody{
+        padding: em(5px);
+        border: 0; 
+    }
+    tr,td{
+        padding: em(5px);
+    }
+    a{
+        text-decoration: none;
+        color: $gris-anthracite;
+        font-size: small;
+        font-weight: bold;
+        padding: em(3px);
+        display: list-item;
+        list-style: square inside none;
+        @include arrondis;
+        &:hover{
+            color: white;
+            background: $vert;
+
+        }
+    }
+    .filefield-icon {
+        display: none;
+    }
+    p{
+        color: $gris-anthracite;
+        padding: em(5px);
+        a:hover{
+            background: $vert;
+            color: white;
+        }
+    }
+    ul{
+        padding: em(5px);
+    }
+}
+
+
+/*starburst pour mention Alternance / initial*/
+.starburst {
+	display:block;
+	width:6em;
+	height:6em;
+	background:#fe0;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	transform: rotate(45deg);/*Pour IE*/
+	position:relative;
+	top:0em;
+	left:-1em;
+	text-align:center;
+	text-decoration:none;
+	color:#000;
+	margin: 0 1em 2em 3em ;
+}
+.starburst span {
+	display:block;
+	width:6em;
+	height:6em;
+	background:#fe0;
+	-webkit-transform:rotate(22.5deg);
+	-moz-transform:rotate(22.5deg);
+	transform: rotate(-22.5deg);/*Pour IE*/
+}
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+.starburst span p{
+	  -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+       }
+/*######-------- ||| TITRES H ||| --------######*/
+#colonne-2.fiche-formation{
+    h2{
+        font-family: $AristaFont;
+        text-align: center;
+        color: $bleu-turquoise;
+        font-size: large;
+        margin: 0 0 em(10px);
+
+    }
+    h3.viewreference-title{
+        font-size: medium;
+        color: $orange;
+    }
+}
+#colonne-3.fiche-formation{
+    h2{
+        font-size: large;
+        color: $orange;
+        margin: 1em 0;
+        a{
+            color: $orange;
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
+    h3{
+        font-size: medium;
+        color: $vert;
+        a{
+
+            color: $vert;
+            &:hover{
+
+                color: $orange;
+            }
+        }
+    }
+    h4{
+        font-size: small;
+        color: $violet;
+        a{
+
+            color: $violet;
+            &:hover{
+
+                color: $orange;
+            }
+        }
+    }
+    p{
+        padding: 0.3em;
+    }
+}
+/*----------- STYLES POUR FICHE FORMATION ------------------*/
+h1.titre_fiche{
+    background: white url('../images/bg_coin_vierge.jpg') no-repeat top left;
+    display: table-cell;
+    height: auto;
+    padding: 40px 0 10px 20px;
+    color: $vert;
+     width: 175px;
+}
+
+h1.titre_pole_tertiaire{
+    background: white url('../images/bg_coin_fiche_tertiaire.jpg') no-repeat top left;
+    display: table-cell;
+    height: auto;
+    padding: 40px 0 10px 20px;
+    color: $vert;
+     width: 175px;
+}
+h1.titre_pole_tertiaire a{
+    text-decoration: none;
+    color: $vert;
+    padding: 0 0 0 40px;
+}
+h1.titre_pole_services{
+    background: white url('../images/bg_coin_fiche_services.jpg') no-repeat top left;
+    display: table-cell;
+    height: auto;
+    padding: 40px 0 10px 20px;
+    color: $vert;
+     width: 175px;
+}
+h1.titre_pole_services a{
+    text-decoration: none;
+    color: $vert;
+    padding: 0 0 0 40px;
+}
+h1.titre_pole_arts{
+    background: white url('../images/bg_coin_fiche_arts.jpg') no-repeat top left;
+    display: table-cell;
+    height: auto;
+    padding: 40px 0 10px 20px;
+    color: $vert;
+     width: 175px;
+}
+h1.titre_pole_arts a{
+    text-decoration: none;
+    color: $vert;
+    padding: 0 0 0 40px;
+}

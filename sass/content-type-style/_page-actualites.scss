@@ -1,0 +1,219 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|       PAGE ACTUALITE LISTE      |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    #colonne-1.page-actualites{order:2;}
+    #colonne-2.page-actualites{order:1;}
+    #colonne-3.page-actualites{order:3;}
+    @include breakpoint ($desktop){
+    #colonne-1.page-actualites{order:1;}
+    #colonne-2.page-actualites{order:2;}
+    #colonne-3.page-actualites{order:3;}
+    }
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur .conteneur-flex{
+    @include breakpoint ($desktop){
+        #colonne-2.page-actualites{@include border-vert-violet;}
+    }
+    
+}
+
+/*Bloc vue actu générale - page actu globale*/
+h3.titre-bloc-actus-generales{
+    font-family: arista,Trebuchet MS, sans-serif;
+   text-align: center;
+   color: $orange;
+   margin: 0;
+}
+table#vue-bloc-actus-generales
+{
+    padding: em(5px);  width: 98%;margin: 0 auto;
+
+    span{
+        font-size: smaller;
+    }
+    tr{
+        background: $gris-clair;
+        background-color: $gris-clair;
+        display: block;
+        margin: 0.2em auto;
+        width: inherit;
+        &:hover{ background: #e8efbf;   }
+    }
+    td{
+        padding: em(2px) 0;
+        width: 100%;
+        display: inline-block;//pour eviter effet de padding sur rollover
+        &:hover{border-right: $vert solid em(2px);}
+    }
+}
+
+
+
+
+#vue-bloc-actus-generales hr{
+    border-top: em(1px) solid $violet;
+    width: 75%;
+    margin: 0 auto;
+    display: none;
+}
+#vue-bloc-actus-generales td a{
+    text-decoration: none;
+    font-size: initial;
+    font-weight: bold;
+    margin: 0;
+    color: $vert;
+  
+}
+
+#vue-bloc-actus-generales img{
+    border: $violet 0.3em solid;
+    float: right;
+    margin: em(2px) em(4px);
+    padding: em(2px);
+}
+#vue-bloc-actus-generales td a:hover{color: $violet;}
+#vue-bloc-actus-generales td img{border: em(2px) solid $violet;float: right;}
+#vue-bloc-actus-generales td img :hover{opacity: 80;}
+#vue-bloc-actus-generales span.views-field-name,#vue-bloc-actus-generales span.views-field-created,#vue-bloc-actus-generales span.views-field-field-date-evenement-value{
+    font-style: italic;
+    font-size: small;
+    padding: 0 em(5px);
+    text-align: right;   
+}
+#views-exposed-form-Actualites-liste-globale-block-1{
+    width: 95%;
+    margin: em(5px) auto;
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    @include arrondis;
+    padding: em(10px) em(5px);
+}
+#views-exposed-form-Actualites-liste-globale-block-1 .date-views-filter-wrapper
+{width: auto;min-width: 20%;}
+
+#views-exposed-form-Actualites-liste-globale-block-1 {
+    .views-exposed-form .views-exposed-widget{
+        padding: .5em .5em 0 0;
+    }
+    .views-widget-filter-field_date_evenement_value
+{margin: 0 0 0 em(10px);}
+ .views-widget-filter-tid,.views-widget-filter-field_date_evenement_value{
+     label{
+         font-size: small;
+     }
+ }
+}
+
+
+/*Pager liste actu globale*/
+.view-Actualites-liste-globale ul.pager{margin: em(3px) auto;width: 95%;display: block;padding: em(3px);}
+.view-Actualites-liste-globale .pager li
+{float: left;}
+.view-Actualites-liste-globale .pager li a{color:$gris-anthracite;}
+.view-Actualites-liste-globale .pager li.pager-item,.view-Actualites-liste-globale .pager li.pager-current
+{padding: em(3px);@include arrondis(0.8em); height: em(15px);width: em(15px);}
+.view-Actualites-liste-globale .pager li.pager-item
+{background:$violet ;color:$gris-clair;}
+.view-Actualites-liste-globale .pager li.pager-item a{color:$gris-clair;}
+.view-Actualites-liste-globale .pager li.pager-current
+{background: $vert;color:$gris-anthracite;}
+
+/*Bloc actu association RSS sur page Actu globale*/
+.block-aggregator{
+    font-size: small;
+    ul li{
+        list-style: none;
+    }
+}
+#block-aggregator-feed-1{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+#block-aggregator-feed-1 h3{
+    font-family: arista,Trebuchet MS, sans-serif;
+   text-align: center;
+   color: $vert;
+   font-size: 1.5em;
+   margin: 0;
+}
+#block-aggregator-feed-1 ul{
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    @include arrondis();
+    padding:  em(5px);
+    margin: em(10px) 0;
+    
+
+}
+#block-aggregator-feed-1 ul li{
+    margin: em(5px) 0;
+    
+}
+#block-aggregator-feed-1 li a{
+    color: $gris-clair-moyen;
+    text-decoration: none;
+    padding: em(2px);
+    display: block;
+    background: white;
+    
+    
+}
+#block-aggregator-feed-1 li a:hover{
+    color: white;
+    background: $vert;
+}
+/*Vue liste des RP pour item actu*/
+#bloc_actus_rp h3{
+   font-family: arista,Trebuchet MS, sans-serif;
+   text-align: center;
+   color: $violet;
+   font-size: x-large;
+   margin: em(5px) 0;
+}
+.liste-revue-presse_defaut{
+    background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat top;
+    background-size: contain;
+}
+.liste-revue-presse_defaut ul{
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: em(5px) 0;
+}
+.liste-revue-presse_defaut li{
+    
+    text-align: center;
+    padding: em(5px);
+}
+.liste-revue-presse_defaut li a{
+    padding: em(2px);
+    text-decoration: none;
+    color: $gris-clair-moyen;
+    font-weight: bold;
+    font-size: x-small;
+    @include breakpoint ($desktop){
+        font-size: small;
+    }
+    
+}
+.liste-revue-presse_defaut li a:hover{
+    background: $gris-clair;
+}
+.liste-revue-presse_defaut hr{
+    border-top: em(1px) solid $violet;
+    width: 75%;
+    margin: 0 auto;
+
+}
