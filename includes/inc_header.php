@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
  <!-- stats-SEO -->
     <meta name="google-site-verification" content="msBEDS9QaIIEpzPS6_Wi-HOzKWr1Kw0dageOmF-4rbs" />
-    <meta name="y_key" content="e0a3005490e0c1fc"/>
+    <meta name="y_key" content="11677ed5e2db4f15" />
     <meta name="msvalidate.01" content="E2114447554473259DE0996EF11B87E0" />
       <?php /* Code pour scan par https://detectify.com */ ?>
     <meta name="detectify-verification" content="8497102470e46552eeca2eb8a07b7910" />
