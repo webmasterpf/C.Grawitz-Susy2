@@ -142,7 +142,7 @@ h2 {
 ---- STYLE HOMEPAGE ACTUS -----------
 *********************************/
 
-#HPBasGauche a,#HPBasDroit{
+.HPBasGauche,.HPBasDroit{
     ul li{
         list-style: square;
     }
@@ -156,7 +156,7 @@ h2 {
         text-align: center;
     }
     iframe{
-        margin: 1em 0 0 6em;
+        margin: 1em 0 0 2em;
     }
 }
 
@@ -203,6 +203,7 @@ h2 {
 HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
 */
 #block-views-HP_slideshow-block_1{
+    padding: 0 1.5em;
     #views_slideshow_cycle_main_HP_slideshow-block_1 {
         .views-field-title {
             a{
@@ -212,10 +213,10 @@ HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
                 }
             }
         }
-    
-    img{
-        padding: em(2px);
-        border: em(3px) solid $orange;
+
+        img{
+            padding: em(2px);
+            border: em(3px) solid $orange;
+        }
     }
-}
 }
