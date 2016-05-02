@@ -153,3 +153,47 @@ h2 {
       margin-top: 0.2em;
   }
 }
+
+/*********************************
+---- STYLE HOMEPAGE ACTUS -----------
+*********************************/
+#table-actus-hp,#table-actus-hp2{
+    width: 440px;
+    margin: 0 auto;
+    border: 0;
+}
+#table-actus-hp thead th,#table-actus-hp2 thead th{
+    border-bottom: 3px solid #F29400;
+}
+#table-actus-hp tbody,#table-actus-hp2 tbody{}
+#table-actus-hp tr,#table-actus-hp2 tr{
+    margin: 3px;
+
+
+}
+#table-actus-hp td,#table-actus-hp2 td{
+    background: white;
+    border: 0;
+    margin: 2px 0;
+    padding: 5px;
+    display: block;
+    border-bottom: 1px solid #950F7E;
+}
+#table-actus-hp td:hover,#table-actus-hp2 td:hover{
+    background: #F29400;
+}
+#table-actus-hp p{}
+#table-actus-hp a,#table-actus-hp2 a{
+    color: #950F7E;
+    text-decoration: none;
+    font-weight: bold;
+}
+#table-actus-hp a:hover,#table-actus-hp2 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#table-actus-hp span.date-display-single,#table-actus-hp2 span.date-display-single{
+    text-align: right;
+    float: right;
+    font-style: italic;
+}
