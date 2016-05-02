@@ -38,28 +38,31 @@ aside.navStatic{
                     margin: 0.25em;
                     border: 0;
                     font-family: $AristaFont;
-                    color: $bleu-turquoise;//couleur des liens
+                    color: $orange;//couleur des liens
                     text-decoration: none;
                     display: block;
-                    font-size: large;//1.8em
+                    font-size: x-large;
                     &:hover {
                         color: $violet;//couleur du hover
                     }
                     img{
                    @include adaptable-img;
-                   
-                   margin: 0;
+                      margin: 0;
                 }
                 
                 }
                
             }
             li.logo{
-                background-image: image-url("logo-Pf-sites-lycees.jpg");//avec compass
-                background-position: left 0.3em;
+                /*background-image: image-url("logo-Pf-sites-lycees.jpg");//avec compass*/
+                background-image: image-url("logo-PF-lycees.svg");//avec compass
+                background-position: left 0.45em;
                 background-size: contain;
                 text-indent: -9999em;
                 width: 18em;//règle la taille du logo
+                height: 3.5em;
+                transform: scale(0.95);
+                zoom:95%;
             }
         }
     }

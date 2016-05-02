@@ -152,17 +152,22 @@ h2 {
             text-decoration:underline;
         }
     }
-    h3{
+    h3,h3.block-title{
         text-align: center;
+        color: $orange;
+        margin: 1em 0 0 0;
     }
     iframe{
-        margin: 1em 0 0 2em;
+        @include breakpoint ($desktop){
+            margin: 1em 0 0 2em;
+        }
+        
     }
 }
 
 
 #table-actus-hp,#table-actus-hp2{
-    width: em(440px);
+    width: 91%;
     margin: 0 auto;
     border: 0;
     thead th{
@@ -217,6 +222,13 @@ HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
         img{
             padding: em(2px);
             border: em(3px) solid $orange;
+            @include adaptable-img;
         }
     }
+}
+/*
+LIKEBOX FACEBOOK ====
+*/
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+width: 100% !important;
 }
