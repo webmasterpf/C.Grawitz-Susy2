@@ -78,22 +78,6 @@ body .conteneur {
     }
 }
 
-/****************/
-.HPBasGauche, .HPBasDroit {
-
-    background: none;
-    color: black;
-    ul li {
-        list-style: square;
-    }
-    a {
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-}
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 
 //Layout du diaporama dynamique (Views slideshow)
@@ -157,43 +141,81 @@ h2 {
 /*********************************
 ---- STYLE HOMEPAGE ACTUS -----------
 *********************************/
+
+#HPBasGauche a,#HPBasDroit{
+    ul li{
+        list-style: square;
+    }
+    a{
+        text-decoration:none;
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+    h3{
+        text-align: center;
+    }
+    iframe{
+        margin: 1em 0 0 6em;
+    }
+}
+
+
 #table-actus-hp,#table-actus-hp2{
-    width: 440px;
+    width: em(440px);
     margin: 0 auto;
     border: 0;
+    thead th{
+        border-bottom: em(3px) solid $orange;
+    }
+    tbody{}
+    tr{
+        margin: em(3px);
+    }
+    td{
+        background: white;
+        border: 0;
+        margin: em(2px) 0;
+        padding: em(5px);
+        display: block;
+        border-bottom: em(1px) solid $violet;
+        &:hover{
+            background: $orange;
+        }
+    }
+    p{}
+    a{
+        color: $violet;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover{
+            text-decoration: underline;
+            color: white;
+        }
+    }
+    span.date-display-single{
+        text-align: right;
+        float: right;
+        font-style: italic;
+    }
 }
-#table-actus-hp thead th,#table-actus-hp2 thead th{
-    border-bottom: 3px solid #F29400;
+/*
+HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
+*/
+#block-views-HP_slideshow-block_1{
+    #views_slideshow_cycle_main_HP_slideshow-block_1 {
+        .views-field-title {
+            a{
+                color:$violet;font-size: em(14px);text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    
+    img{
+        padding: em(2px);
+        border: em(3px) solid $orange;
+    }
 }
-#table-actus-hp tbody,#table-actus-hp2 tbody{}
-#table-actus-hp tr,#table-actus-hp2 tr{
-    margin: 3px;
-
-
-}
-#table-actus-hp td,#table-actus-hp2 td{
-    background: white;
-    border: 0;
-    margin: 2px 0;
-    padding: 5px;
-    display: block;
-    border-bottom: 1px solid #950F7E;
-}
-#table-actus-hp td:hover,#table-actus-hp2 td:hover{
-    background: #F29400;
-}
-#table-actus-hp p{}
-#table-actus-hp a,#table-actus-hp2 a{
-    color: #950F7E;
-    text-decoration: none;
-    font-weight: bold;
-}
-#table-actus-hp a:hover,#table-actus-hp2 a:hover{
-    text-decoration: underline;
-    color: white;
-}
-#table-actus-hp span.date-display-single,#table-actus-hp2 span.date-display-single{
-    text-align: right;
-    float: right;
-    font-style: italic;
 }
