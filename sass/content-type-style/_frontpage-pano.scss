@@ -107,36 +107,6 @@ aside.DiapoPanoHP{
     }
 
 }
-// Style du diaporama dynamique
-.HPDiapo .field-content{
-    
-}
-#transparency{
-
-height:em(65px);
-bottom:4.7em; 
-left:em(12px);
-position:relative;
-z-index:15;
-width: 98%;
-@include rgba-background($violet,0.6);/*Couleur et opacité du fond*/
-
-h2 {
-    color: white;
-    padding: em(5px);
-    font-family: $AristaFont;
-    font-size: larger;
-     bottom:0.75em;
-     
-  }
-  a {
-    
-    text-decoration: none;
-  }
-  p{
-      margin-top: 0.2em;
-  }
-}
 
 /*********************************
 ---- STYLE HOMEPAGE ACTUS -----------

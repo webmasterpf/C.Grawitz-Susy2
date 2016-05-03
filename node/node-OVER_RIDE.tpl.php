@@ -20,7 +20,7 @@
   $theme_path = drupal_get_path('theme', 'NOM_THEME');
 include($theme_path .'/includes/inc_region_col_1.php');
 ?>
-        </div>
+        </div><!-- /colonne1 -->
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
         <div id="colonne-2" class="CHOIX_DU_LAYOUT">
@@ -35,7 +35,7 @@ include($theme_path .'/includes/inc_region_col_1.php');
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
 
-        </div>
+        </div><!-- /colonne2 -->
 
         <!--______________COLONNE 3________________ -->
         <div id="colonne-3" class="CHOIX_DU_LAYOUT">
@@ -47,7 +47,7 @@ include($theme_path .'/includes/inc_region_col_1.php');
             <?php endif;?>
 
 
-        </div>
+        </div><!-- /colonne3 -->
 
         <?php if ($terms): ?>
         <div class="taxonomy"><?php //print $terms; ?></div>

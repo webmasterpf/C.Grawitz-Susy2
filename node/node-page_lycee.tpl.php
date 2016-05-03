@@ -6,25 +6,21 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
-        <?php /* choix du layout selon la largeur des colonnes
-         * .col1_layout_3_8_3{} .col1_layout_4_5_5{} .col1_layout_5_9{}
-         * .col2_layout_3_8_3{} .col2_layout_4_5_5{} .col2_layout_5_9{}
-         * .col3_layout_3_8_3{} .col3_layout_4_5_5{}
-         */?>
-        <div class="col1_layout_4_8">
+   
+        <div id="colonne-1" class="col1_layout_3_6_3 page-lycee">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page"><?php print $title; ?></h1>
+            <h1 class="titre-lycee"><?php print $title; ?></h1>
             <?php endif; ?>
-        
+        <?php  print $node->field_image_deco_lycee[0]['view'] /*Image deco page lycee*/ ?>
             <?php 
   //$theme_path = drupal_get_path('theme', 'NOM_THEME');
   global $theme_path;
 include($theme_path .'/includes/inc_region_col_1.php');
 ?>
-        </div>
+        </div><!-- /colonne1 -->
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div class="col2_layout_4_8">
+        <div id="colonne-2" class="col2_layout_3_6_3 page-lycee">
 
             <?php print $picture; ?>
 
@@ -34,24 +30,37 @@ include($theme_path .'/includes/inc_region_col_1.php');
 
             <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
-            </div>
+                
+      <?php if ($node->field_video_lycee[0]['view']): ?>
+        <div id="video-plycee">
+            <?php  print $node->field_video_lycee[0]['view'];?>
+        </div>
+           <?php endif;?>
            <?php 
   //$theme_path = drupal_get_path('theme', 'NOM_THEME');
   global $theme_path;
 include($theme_path .'/includes/inc_region_col_2.php');
-?>
-                        <?php 
-  //$theme_path = drupal_get_path('theme', 'NOM_THEME');
-  global $theme_path;
-include($theme_path .'/includes/inc_region_col_3.php');
-?>
+?>     
+            </div>
+           
+ 
+
+        </div><!-- /colonne2-->
+          <!--______________COLONNE 3________________ -->
+        <div id="colonne-3" class="col3_layout_3_6_3 page-lycee">
             <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
             <?php if ($node->nom_du_champ[0]['view']): ?>
             <div id="nom-css">
                     <?php  print $node->nom_du_champ[0]['view']  ?>
             </div>
             <?php endif;?>
-        </div>
+                       <?php 
+  //$theme_path = drupal_get_path('theme', 'NOM_THEME');
+  global $theme_path;
+include($theme_path .'/includes/inc_region_col_3.php');
+?>
+
+        </div><!-- /colonne3 -->
 
       
 

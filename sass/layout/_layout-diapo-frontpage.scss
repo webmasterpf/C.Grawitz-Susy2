@@ -58,7 +58,7 @@ body .conteneur .HPDiapo{
             width: 98%;
             position:relative;
             z-index:15;
-            @include rgba-background($bleu-turquoise,0.6);/*Couleur et opacité du fond*/
+            @include rgba-background($orange,0.6);/*Couleur et opacité du fond*/
         }
         #contenu-diapo {
 
