@@ -47,11 +47,10 @@ h4{}
 p{}
 ul{}
 img{
-    @include ombrage();
-     border: 5px solid #fff;
-    -moz-box-shadow: #AAAAAA 0px 0px 5px ;
-    -webkit-box-shadow: #AAAAAA 0px 0px 5px;
-    box-shadow: #AAAAAA 0px 0px 5px;
+    @include ombrage(0.3em,0,0,0.1em);
+    display: block;
+    margin: 0 auto;
+    @include adaptable-img;
 }
 
 a{
@@ -70,21 +69,21 @@ h4 a:hover{}
 #colonne-2.page-lycee{
     h2{
         color: $orange;
-        padding: 5px;
+        padding: em(5px);
     }
     h3{
-        color: #911381;
-        padding: 5px;
+        color: $violet;
+        padding: em(5px);
     }
     h4{
-        padding: 5px;
-        color: #F29803;
+        padding: em(5px);
+        color: $orange;
     }
     p{
-        padding: 5px;
+        padding: em(5px);
     }
     ul{
-        padding: 5px;
+        padding: em(5px);
     }
     img{
 
@@ -131,45 +130,43 @@ h4 a:hover{}
     margin: 0 auto;
     width: 90%;
     background: transparent url(../images/bg_doc_utile_rp.gif) repeat ;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    padding: 10px 0;
-    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+    padding: em(10px) 0;
     position: relative;
-}
-#fichier-joint-plycee h3{
-    font-family: arista,Trebuchet MS, sans-serif;
-    color: $orange;
-    padding: em(5px);
-    text-align: center;
+    @include arrondis;
+    @include PIE;
+    h3{
+        font-family: $AristaFont;
+        color: $orange;
+        padding: em(5px);
+        text-align: center;
+        font-size: x-large;
+    }
+    a{
+        color: $gris-clair-moyen;
+        display: block;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: em(2px);
+        width: 90%;
+        text-decoration: none;
+        font-size:small;
+        &:hover{
+            background: $orange;
+            color: white;
+            @include arrondis;
+        }
+    }
 
+    .filefield-icon {
+        display: none;
+    }
 }
-#fichier-joint-plycee a{
-    color: $gris-clair-moyen;
-    display: block;
-    font-weight: bold;
-    margin: 0 auto;
-    padding: em(2px);
-    width: 90%;
-    text-decoration: none;
-}
-#fichier-joint-plycee a:hover{
-    background: $orange;
-    color: white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    
 
-}
-#fichier-joint-plycee .filefield-icon {
-    display: none;
-}
+
 #video-plycee{
     margin: 0 auto;
-    border: 1px solid $orange;
-    padding: 5px;
+    border: 0.1em solid $orange;
+    padding: em(5px);
     width: 90%;
 }
 
@@ -211,3 +208,12 @@ h4 a:hover{}
         background: white;
     }
 }
+
+/*---- PAGE RESULTATS ¤¤¤*/
+.table-resultats{
+    table{width: 100%;}
+    tbody{border: 0;}
+    tr{border-bottom: 0.1em solid $orange;}
+    tr:hover{background: gainsboro;}
+}
+

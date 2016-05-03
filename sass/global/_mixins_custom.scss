@@ -59,9 +59,9 @@
 }
 @mixin ombrage ($contour:0.5em,$decalage-horizontal:0.5em,$decalage-vertical:0.5em,$couleur-ombre:#aaa){
     border: $contour solid #fff;
-    -moz-box-shadow: $decalage-horizontal $decalage-vertical 12px $couleur-ombre;
-    -webkit-box-shadow: $decalage-horizontal $decalage-vertical 12px $couleur-ombre;
-    box-shadow: $decalage-horizontal $decalage-vertical 12px $couleur-ombre;
+    -moz-box-shadow: $decalage-horizontal $decalage-vertical 0.3em $couleur-ombre;
+    -webkit-box-shadow: $decalage-horizontal $decalage-vertical 0.3em $couleur-ombre;
+    box-shadow: $decalage-horizontal $decalage-vertical 0.3em $couleur-ombre;
     }
 @mixin ombrage-interne($contour:0.5em,$decalage-horizontal:0.5em,$decalage-vertical:0.5em,$profondeur:0.3em,$couleur-ombre:#aaa){
     -moz-box-shadow: inset $decalage-horizontal $decalage-vertical $profondeur $couleur-ombre;

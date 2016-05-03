@@ -48,12 +48,21 @@ include($theme_path .'/includes/inc_region_col_2.php');
         </div><!-- /colonne2-->
           <!--______________COLONNE 3________________ -->
         <div id="colonne-3" class="col3_layout_3_6_3 page-lycee">
-            <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
-            <?php if ($node->nom_du_champ[0]['view']): ?>
-            <div id="nom-css">
-                    <?php  print $node->nom_du_champ[0]['view']  ?>
-            </div>
-            <?php endif;?>
+           <?php if ($node->field_fichier_joint_lycee[0]['view'] 
+                OR $node->field_lien_page_lycee[0]['view']): ?>
+        <div id="fichier-joint-plycee">
+            <h3>Utile</h3>
+           <?php  print $node->field_fichier_joint_lycee[0]['view'];?>
+             <?php  print $node->field_lien_page_lycee[0]['view'];?>
+
+        </div>
+           <?php endif;?>
+   
+        <br clear="all"/>
+          <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_cg');
+              include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
+              ?>
                        <?php 
   //$theme_path = drupal_get_path('theme', 'NOM_THEME');
   global $theme_path;
