@@ -37,12 +37,12 @@
        
  <?php print $node->content['webform']['#value']; ?>
    
-
-  </div>
     <?php
   global $theme_path;
   include ($theme_path . '/includes/inc_region_col_2.php');
   ?>
+  </div>
+
     <?php if ($links): ?>
     <div class="links">&raquo; <?php print $links; ?></div>
   <?php endif; ?>
@@ -54,16 +54,13 @@
 </div>
 <!--______________COLONNE 3________________ -->
        <div id="colonne-3" class="col3_layout_3_6_3 webform">
-     <?php print $picture; ?>
-
-
-
+     
     <div class="content">
   <?php
                 global $theme_path;
               include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
               ?>
-         <br clear="all"/>
+         
         <?php
                 global $theme_path;
               include ($theme_path.'/includes/inc_region_col_3.php');
@@ -76,15 +73,5 @@
   
 
 </div>
-
-  <?php if ($picture) { print $picture; }?>
-
-  <?php if ($page == 0) { ?>
-    <?php if ($title) { ?>
-      <h2 class="title"><a href="<?php print $node_url?>"><?php print $title?></a></h2>
-    <?php }; ?>
-  <?php }; ?>
-
-<div class="clear-block clear"></div>
 
 </div><!-- /node -->
