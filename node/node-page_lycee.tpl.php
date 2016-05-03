@@ -42,9 +42,6 @@ include($theme_path .'/includes/inc_region_col_1.php');
 include($theme_path .'/includes/inc_region_col_2.php');
 ?>     
             </div>
-           
- 
-
         </div><!-- /colonne2-->
           <!--______________COLONNE 3________________ -->
         <div id="colonne-3" class="col3_layout_3_6_3 page-lycee">
@@ -60,7 +57,7 @@ include($theme_path .'/includes/inc_region_col_2.php');
    
         <br clear="all"/>
           <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
+                global $theme_path;
               include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
               ?>
                        <?php 

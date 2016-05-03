@@ -29,7 +29,7 @@ body .conteneur {
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-#colonne-1.contact{
+#colonne-2.webform{
     table,tbody,tr,td,form,input[type="text"],input[type="email"]{
           width: 98%;display: block;
       }
@@ -37,4 +37,44 @@ body .conteneur {
           border: 0;
       }
     
+}
+
+h1.titre-webform{
+    font-size: em(24px);
+    color: $violet;
+    line-height: 1.0em
+}
+
+#colonne-2.webform{
+    h2{
+        color: $orange;
+        padding: em(5px);
+    }
+    h3{
+        color: $violet;
+        padding: em(5px);
+    }
+    h4{
+        padding: em(5px);
+        color: $orange;
+    }
+    p{
+        padding: em(5px);
+    }
+    ul{
+        padding: em(5px);
+    }
+    img{
+
+    }
+    a{
+        color: $orange;
+        text-decoration: none;
+        padding: 2px;
+        &:hover{
+            color: white;
+            background: $orange;
+        }
+    }
+    form{margin: 0 6em;}
 }
