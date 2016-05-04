@@ -18,7 +18,7 @@
         
             <?php 
   $theme_path = drupal_get_path('theme', 'NOM_THEME');
-include($theme_path .'/includes/inc_region_col_1.php');
+include($theme_path .'/includes/regions_inc/inc_region_col_1.php');
 ?>
         </div><!-- /colonne1 -->
         <!--______________COLONNE 2________________ -->

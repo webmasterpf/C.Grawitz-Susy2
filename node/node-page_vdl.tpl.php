@@ -19,7 +19,7 @@
               ?>
              <?php
               $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_col_G1.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
@@ -46,7 +46,7 @@
 
                     <?php
               $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_region_col_G2.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_col_G2.php');
               ?>
 
             </div>
@@ -61,7 +61,7 @@
 
     <?php
               $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_region_col_G3.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_col_G3.php');
               ?>
         </div>
 

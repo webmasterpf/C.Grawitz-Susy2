@@ -18,7 +18,7 @@
       <br clear="all"/>
        <?php
                 global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_1.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
               ?>
 </div>
 <!--______________COLONNE 2________________ -->
@@ -39,7 +39,7 @@
    
     <?php
   global $theme_path;
-  include ($theme_path . '/includes/inc_region_col_2.php');
+  include ($theme_path . '/includes/regions_inc/inc_region_col_2.php');
   ?>
   </div>
 
@@ -56,14 +56,13 @@
        <div id="colonne-3" class="col3_layout_3_6_3 webform">
      
     <div class="content">
-  <?php
+         <?php
                 global $theme_path;
-              include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_vue_grawitz_actus.php');
               ?>
-         
         <?php
                 global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_3.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_col_3.php');
               ?>
     </div>
 
