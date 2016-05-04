@@ -7,3 +7,4 @@
 ?>
 <link href='http://fonts.googleapis.com/css?family=Arvo&subset=latin' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo&subset=latin' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>

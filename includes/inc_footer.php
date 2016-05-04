@@ -7,6 +7,7 @@
         
       <?php
 global $theme_path;
+include ($theme_path.'/js/google_font.php');
 include ($theme_path.'/js/code_stats.php');
 ?>
      </div>

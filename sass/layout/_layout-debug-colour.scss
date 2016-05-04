@@ -181,7 +181,18 @@ body .conteneur {
 /*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
 ********** COULEUR LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+body .conteneur{
+    .col1_layout_max{
+        background: #f5bdac;
+        @include breakpoint ($mobile){
+            
+        }
+        @include breakpoint ($desktop){
+         background: peachpuff;
+        }
+    }
 
+}
 
 
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
@@ -419,8 +430,22 @@ body .conteneur{
   .col1_layout_5_7{}
   .col2_layout_5_7{}
   
-  .col1_layout_6_6{}
-  .col2_layout_6_6{}
+  .col1_layout_6_6{
+      @include breakpoint ($tablet){
+          background: tomato;
+      }
+      @include breakpoint ($desktop){
+          background: thistle;
+      }
+  }
+  .col2_layout_6_6{
+      @include breakpoint ($tablet){
+          background: #00CC99;
+      }
+      @include breakpoint ($desktop){
+          background: #cccccc;
+      }
+  }
   
   .col1_layout_7_5{
       @include breakpoint ($tablet){

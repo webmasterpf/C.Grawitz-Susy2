@@ -17,16 +17,29 @@ body .conteneur{
         }
         @include breakpoint ($desktop){
             @include span(12 of $desktopcol);
-            /*            &:after{
+                        &:after{
                             content: " ";
                             display: block;
                             clear: both;
-                        } */
+                            
+                        } 
         }
     }
 
 }
-
+/*////////////// BLOCS IMBRIQUéS DANS BLOC PLEINE LARGEUR \\\\\\\\\*/
+body .conteneur{
+    .colonne-1-1{
+        @include breakpoint ($desktop){
+            @include span(first 3 of $desktopcol);
+        }
+    }
+    .colonne-1-2{
+        @include breakpoint ($desktop){
+            @include span(last 9 of $desktopcol);
+        }
+    }
+}
 /*//////////////// 3 COLONNES \\\\\\\\\\\\\\\\*/
 body .conteneur{
     .col1_layout_3_6_3{
@@ -292,8 +305,19 @@ body .conteneur{
   .col1_layout_5_7{}
   .col2_layout_5_7{}
   
-  .col1_layout_6_6{}
-  .col2_layout_6_6{}
+  .col1_layout_6_6{
+      @include breakpoint ($tablet){}
+      @include breakpoint ($desktop){
+           @include span(6 of $desktopcol);
+      }
+  }
+  .col2_layout_6_6{
+         @include breakpoint ($tablet){}
+      @include breakpoint ($desktop){
+          @include span(last 6 of $desktopcol);
+          @include isolate(0%);//fixe le margin-left
+      }
+  }
   
   .col1_layout_7_5{
       @include breakpoint ($tablet){}

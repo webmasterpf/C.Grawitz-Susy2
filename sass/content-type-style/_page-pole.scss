@@ -45,7 +45,7 @@ h1.titre_pole_content{
 .bloc_pole_formation_MSAC, .bloc_pole_formation_MRSP, .bloc_pole_formation_FC{
     background:  url(../images/bg_pole.jpg) no-repeat left top ;
     background-size: cover;
-    padding: em(30px) 0 em(15px) 0;
+    padding: em(30px) 0 0 0;
     h3 {
         color: $gris-anthracite;
         display: block;
@@ -61,33 +61,30 @@ h1.titre_pole_content{
 }
 }
 
-
-
-
-
-
-.table-liste-pole{
-   display: block;
-       tbody{      
-}
- td{
-     text-align: center;
-   
-}
-p{
-    line-height: 1em;
-}
- a{
-    padding: em(2px);
+table.table-liste-pole{
+    margin: 0 auto;
+    width: 60%;//permet de centrer le contenu
+    padding: 0;
     display: block;
-    color: $gris-clair;
-    font-size: small;
-    text-decoration: none;
-    width:80%;
-    margin:0 auto;
-  &:hover{
-    background: $violet;
-}
-}
+    tbody{        
+    }
+    td{
+        text-align: center;
+
+    }
+    p{
+        line-height: 1em;
+    }
+    a{
+        padding: em(2px);
+        display: block;
+        color: $gris-clair;
+        font-size: small;
+        text-decoration: none;
+        
+        &:hover{
+            background: $violet;
+        }
+    }
 
 }
