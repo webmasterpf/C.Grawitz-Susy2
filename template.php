@@ -44,6 +44,31 @@ function cyranod6_cg_susy2_preprocess_node(&$vars, $hook) {
  $vars['centre_partenaire'] = theme('blocks', 'centre_partenaire');
  $vars['formulaire'] = theme('blocks', 'formulaire');
  //
+ //Pour afficher une seule taxonomie non cliquable - http://drupal.org/node/823918
+  $node = $vars['node'];
+  $vars['template_file'] = 'node-'. $node->nid;
+  $wanted_vid = '5';//Choisir ici le vid diplome,3 sur le DEV, 5 sur le PROD
+  foreach($node->taxonomy as $term) {
+    if ( $wanted_vid == $term->vid ) {
+      $vars['my_taxo_ficheform'] .= $term->name;
+      // drupal_set_message('VID trouve : '.$term->vid.'Terme fiche formation :'.$my_taxo_ficheform,'status');
+      //You would need to format this the way you want it displayed, or pass it to a theme function
+      //Changer le nom de la variable si l'on ne se sert pas toujours du meme vid
+    }
+  }
+   //Pour afficher une seule taxonomie non cliquable - http://drupal.org/node/823918
+  $node = $vars['node'];
+  $vars['template_file'] = 'node-'. $node->nid;
+  $wanted_vid = '6';//Choisir ici le vid actualites 5 en DEV 6 en PROD,
+  foreach($node->taxonomy as $term) {
+    if ( $wanted_vid == $term->vid ) {
+      $vars['my_taxo_actualites'] .= $term->name;
+      // drupal_set_message('VID trouve : '.$term->vid.'Terme fiche formation :'.$my_taxo_ficheform,'status');
+      //You would need to format this the way you want it displayed, or pass it to a theme function
+      //Changer le nom de la variable si l'on ne se sert pas toujours du meme vid
+    }
+  }
+  
 //Partie template node.tpl
 $node = $vars['node'];
 $lesTypes=array('page_fiche_formation', 'page_pole','contenu_actualites');
