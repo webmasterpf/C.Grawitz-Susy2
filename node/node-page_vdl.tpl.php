@@ -2,7 +2,7 @@
 /* Ce template permet la création d'un layout multicolonne pour le spages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
-<!--______________NODE TPL POUR PAGE.TPL CUSTOM________________ -->
+<!--______________NODE TPL POUR node-page_vdl.tpl CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
@@ -11,10 +11,11 @@
          * .col2_layout_200_590_200{} .col2_layout_330_all{} .col2_layout_18_56_25{}
          * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
          */?>
-      <div id="col_G1" class="page_actualites_content_col_G1">
-               <?php
+      <div id="col_G1" class="page_vdl_content_col_G1">
+           
+           <?php 
               $theme_path = drupal_get_path('theme', 'cyrano_cg');
-             include ($theme_path.'/includes/inc_actu_liste_rp.php');
+              include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
               ?>
              <?php
               $theme_path = drupal_get_path('theme', 'cyrano_cg');
@@ -23,10 +24,10 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-         <div id="col_G2" class="page_actualites_content_col_G2">
+         <div id="col_G2" class="page_vdl_content_col_G2">
 
               <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page_actualites"><?php print $title; ?></h1>
+            <h1 class="titre_page_vdl"><?php print $title; ?></h1>
             <?php endif; ?>
             
             <?php print $picture; ?>
@@ -40,7 +41,7 @@
 
                  <?php
               $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_actu_liste_globale.php');
+              include ($theme_path.'/includes/inc_liste_vdl.php');
               ?>
 
                     <?php
@@ -53,8 +54,8 @@
         </div>
 
         <!--______________COLONNE 3________________ -->
-      <div id="col_G3" class="page_actualites_content_col_G3">
-       
+      <div id="col_G3" class="page_vdl_content_col_G3">
+         
 
 
 
