@@ -746,9 +746,9 @@ h6, .h6 {
 /* line 6, ../sass/global/_style.scss */
 .ombrage {
   border: 0.5em solid #fff;
-  -moz-box-shadow: 0.5em 0.5em 12px #aaa;
-  -webkit-box-shadow: 0.5em 0.5em 12px #aaa;
-  box-shadow: 0.5em 0.5em 12px #aaa;
+  -moz-box-shadow: 0.5em 0.5em 0.3em #aaa;
+  -webkit-box-shadow: 0.5em 0.5em 0.3em #aaa;
+  box-shadow: 0.5em 0.5em 0.3em #aaa;
 }
 
 /* line 9, ../sass/global/_style.scss */
@@ -3545,9 +3545,9 @@ body .conteneur .HPDiapo {
     position: relative;
     z-index: 15;
     position: relative;
-    background: #01ABCF;
-    background: rgba(1, 171, 207, 0.6);
-    -pie-background: rgba(1, 171, 207, 0.6);
+    background: #F29400;
+    background: rgba(242, 148, 0, 0.6);
+    -pie-background: rgba(242, 148, 0, 0.6);
     behavior: url(/sites/all/libraries/PIE/PIE.htc);
     /*Couleur et opacité du fond*/
   }
@@ -3743,81 +3743,49 @@ aside.DiapoPanoHP img {
   }
 }
 
-/* line 114, ../sass/content-type-style/_frontpage-pano.scss */
-#transparency {
-  height: 4.0625em;
-  bottom: 4.7em;
-  left: 0.75em;
-  position: relative;
-  z-index: 15;
-  width: 98%;
-  position: relative;
-  background: #911381;
-  background: rgba(145, 19, 129, 0.6);
-  -pie-background: rgba(145, 19, 129, 0.6);
-  behavior: url(/sites/all/libraries/PIE/PIE.htc);
-  /*Couleur et opacité du fond*/
-}
-/* line 124, ../sass/content-type-style/_frontpage-pano.scss */
-#transparency h2 {
-  color: white;
-  padding: 0.3125em;
-  font-family: "Arista", Trebuchet MS, sans-serif;
-  font-size: larger;
-  bottom: 0.75em;
-}
-/* line 132, ../sass/content-type-style/_frontpage-pano.scss */
-#transparency a {
-  text-decoration: none;
-}
-/* line 136, ../sass/content-type-style/_frontpage-pano.scss */
-#transparency p {
-  margin-top: 0.2em;
-}
-
 /*********************************
 ---- STYLE HOMEPAGE ACTUS -----------
 *********************************/
-/* line 146, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 116, ../sass/content-type-style/_frontpage-pano.scss */
 .HPBasGauche ul li, .HPBasDroit ul li {
   list-style: square;
 }
-/* line 149, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 119, ../sass/content-type-style/_frontpage-pano.scss */
 .HPBasGauche a, .HPBasDroit a {
   text-decoration: none;
 }
-/* line 151, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 121, ../sass/content-type-style/_frontpage-pano.scss */
 .HPBasGauche a:hover, .HPBasDroit a:hover {
   text-decoration: underline;
 }
-/* line 155, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 125, ../sass/content-type-style/_frontpage-pano.scss */
 .HPBasGauche h3, .HPBasGauche h3.block-title, .HPBasDroit h3, .HPBasDroit h3.block-title {
   text-align: center;
   color: #F29400;
   margin: 1em 0 0 0;
 }
 @media (min-width: 990px) {
-  /* line 160, ../sass/content-type-style/_frontpage-pano.scss */
+  /* line 130, ../sass/content-type-style/_frontpage-pano.scss */
   .HPBasGauche iframe, .HPBasDroit iframe {
     margin: 1em 0 0 2em;
   }
 }
 
-/* line 169, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 139, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp, #table-actus-hp2 {
   width: 91%;
   margin: 0 auto;
   border: 0;
 }
-/* line 173, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 143, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp thead th, #table-actus-hp2 thead th {
   border-bottom: 0.1875em solid #F29400;
 }
-/* line 177, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 147, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp tr, #table-actus-hp2 tr {
   margin: 0.1875em;
 }
-/* line 180, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 150, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp td, #table-actus-hp2 td {
   background: white;
   border: 0;
@@ -3826,22 +3794,22 @@ aside.DiapoPanoHP img {
   display: block;
   border-bottom: 0.0625em solid #911381;
 }
-/* line 187, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 157, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp td:hover, #table-actus-hp2 td:hover {
   background: #F29400;
 }
-/* line 192, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 162, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp a, #table-actus-hp2 a {
   color: #911381;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 196, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 166, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp a:hover, #table-actus-hp2 a:hover {
   text-decoration: underline;
   color: white;
 }
-/* line 201, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 171, ../sass/content-type-style/_frontpage-pano.scss */
 #table-actus-hp span.date-display-single, #table-actus-hp2 span.date-display-single {
   text-align: right;
   float: right;
@@ -3851,21 +3819,21 @@ aside.DiapoPanoHP img {
 /*
 HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
 */
-/* line 210, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 180, ../sass/content-type-style/_frontpage-pano.scss */
 #block-views-HP_slideshow-block_1 {
   padding: 0 1.5em;
 }
-/* line 214, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 184, ../sass/content-type-style/_frontpage-pano.scss */
 #block-views-HP_slideshow-block_1 #views_slideshow_cycle_main_HP_slideshow-block_1 .views-field-title a {
   color: #911381;
   font-size: 0.875em;
   text-decoration: none;
 }
-/* line 216, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 186, ../sass/content-type-style/_frontpage-pano.scss */
 #block-views-HP_slideshow-block_1 #views_slideshow_cycle_main_HP_slideshow-block_1 .views-field-title a:hover {
   text-decoration: underline;
 }
-/* line 222, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 192, ../sass/content-type-style/_frontpage-pano.scss */
 #block-views-HP_slideshow-block_1 #views_slideshow_cycle_main_HP_slideshow-block_1 img {
   padding: 0.125em;
   border: 0.1875em solid #F29400;
@@ -3875,7 +3843,7 @@ HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
 /*
 LIKEBOX FACEBOOK ====
 */
-/* line 232, ../sass/content-type-style/_frontpage-pano.scss */
+/* line 202, ../sass/content-type-style/_frontpage-pano.scss */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
   width: 100% !important;
 }
@@ -3960,137 +3928,184 @@ body .conteneur .conteneur-flex #colonne-3.page-lycee {
   }
 }
 
+/*######-------- ||| STYLE ||| --------######*/
 /* line 35, ../sass/content-type-style/_page-lycee.scss */
-h1.titre_pl {
-  font-size: 24px;
+h1.titre-lycee {
+  font-size: 1.5em;
   color: #911381;
   line-height: 1em;
 }
 
-/*######-------- COLONNE G1 --------######*/
-/* line 45, ../sass/content-type-style/_page-lycee.scss */
+/*######-------- COLONNE 1 --------######*/
+/* line 48, ../sass/content-type-style/_page-lycee.scss */
 #colonne-1.page-lycee img {
-  border: 0.5em solid #fff;
-  -moz-box-shadow: #AAAAAA 0px 0px 5px;
-  -webkit-box-shadow: #AAAAAA 0px 0px 5px;
-  box-shadow: #AAAAAA 0px 0px 5px;
-}
-/* line 50, ../sass/content-type-style/_page-lycee.scss */
-#colonne-1.page-lycee .imagecache {
-  margin: 0 auto;
+  border: 0.3em solid #fff;
+  -moz-box-shadow: 0 0 0.3em 0.1em;
+  -webkit-box-shadow: 0 0 0.3em 0.1em;
+  box-shadow: 0 0 0.3em 0.1em;
   display: block;
-  width: 47.44898%;
-}
-@media (min-width: 990px) {
-  /* line 50, ../sass/content-type-style/_page-lycee.scss */
-  #colonne-1.page-lycee .imagecache {
-    width: 64.52806%;
-  }
-}
-
-/*######-------- COLONNE G2 --------######*/
-/* line 63, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee h2 {
-  color: #ADC91F;
-  padding: 0.3125em;
-}
-/* line 64, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee h3 {
-  color: #911381;
-  padding: 5px;
-}
-/* line 65, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee h4 {
-  padding: 5px;
-  color: #F29803;
-}
-/* line 66, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee p {
-  padding: 5px;
-}
-/* line 67, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee ul {
-  padding: 5px;
-}
-/* line 68, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee a img {
-  background: 0;
-}
-/* line 69, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee a {
-  background: #AEC821;
-  color: #EFEFEF;
-  text-decoration: none;
-  padding: 3px;
-  margin: 5px;
-}
-/* line 75, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee a:hover {
-  color: #AEC821;
-  background: none;
-  -moz-box-shadow: #AAAAAA 0px 0px 5px;
-  -webkit-box-shadow: #AAAAAA 0px 0px 5px;
-  box-shadow: #AAAAAA 0px 0px 5px;
-}
-/* line 83, ../sass/content-type-style/_page-lycee.scss */
-#colonne-2.page-lycee iframe#slideshare-embed, #colonne-2.page-lycee iframe {
+  margin: 0 auto;
   max-width: 100%;
 }
 
-/*------ LISTE VUE ACTU LYCEE (Colonne G3) ---------*/
-/* line 86, ../sass/content-type-style/_page-lycee.scss */
-#colonne-3 #bloc-actu-lycee {
-  width: 90%;
-  margin: 0 auto;
+/*######-------- COLONNE 2 --------######*/
+/* line 69, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee h2 {
+  color: #F29400;
+  padding: 0.3125em;
 }
-/* line 89, ../sass/content-type-style/_page-lycee.scss */
-#colonne-3 #bloc-actu-lycee h3 {
+/* line 73, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee h3 {
   color: #911381;
-  font-family: arista,Trebuchet MS, sans-serif;
-  font-size: x-large;
-  margin: 0.3125em;
-  display: block;
-  text-align: center;
+  padding: 0.3125em;
+}
+/* line 77, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee h4 {
+  padding: 0.3125em;
+  color: #F29400;
+}
+/* line 81, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee p {
+  padding: 0.3125em;
+}
+/* line 84, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee ul {
+  padding: 0.3125em;
+}
+/* line 90, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee a {
+  color: #F29400;
+  text-decoration: none;
+  padding: 2px;
+}
+/* line 94, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee a:hover {
+  color: white;
+  background: #F29400;
+}
+/* line 99, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee form {
+  margin: 0 6em;
 }
 
-/* line 100, ../sass/content-type-style/_page-lycee.scss */
-.liste-actu-lycee ul {
+/*######-------- COLONNE 3 --------######*/
+/* Fichier joint dans page lycée*/
+/* line 127, ../sass/content-type-style/_page-lycee.scss */
+#fichier-joint-plycee {
+  display: block;
   margin: 0 auto;
-  background: transparent url(../images/zebra-gros-clair.gif) repeat;
-  list-style: none;
+  width: 90%;
+  background: transparent url(../images/bg_doc_utile_rp.gif) repeat;
+  padding: 0.625em 0;
+  position: relative;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+/* line 136, ../sass/content-type-style/_page-lycee.scss */
+#fichier-joint-plycee h3 {
+  font-family: "Arista", Trebuchet MS, sans-serif;
+  color: #F29400;
   padding: 0.3125em;
+  text-align: center;
+  font-size: x-large;
+}
+/* line 143, ../sass/content-type-style/_page-lycee.scss */
+#fichier-joint-plycee a {
+  color: #9898a6;
+  display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0.125em;
+  width: 90%;
+  text-decoration: none;
   font-size: small;
+}
+/* line 152, ../sass/content-type-style/_page-lycee.scss */
+#fichier-joint-plycee a:hover {
+  background: #F29400;
+  color: white;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 109, ../sass/content-type-style/_page-lycee.scss */
-.liste-actu-lycee ul, .liste-actu-lycee p {
-  line-height: normal;
-}
-/* line 112, ../sass/content-type-style/_page-lycee.scss */
-.liste-actu-lycee p {
-  margin: 0.3em;
+/* line 159, ../sass/content-type-style/_page-lycee.scss */
+#fichier-joint-plycee .filefield-icon {
+  display: none;
 }
 
-/* line 118, ../sass/content-type-style/_page-lycee.scss */
-.element-actu-lycee {
+/* line 164, ../sass/content-type-style/_page-lycee.scss */
+#video-plycee {
+  margin: 0 auto;
+  border: 0.1em solid #F29400;
+  padding: 0.3125em;
+  width: 90%;
+}
+
+/*Tableaux*/
+/* line 172, ../sass/content-type-style/_page-lycee.scss */
+.table_generik {
+  border: 0px solid black;
   width: 95%;
   margin: 0 auto;
 }
-/* line 121, ../sass/content-type-style/_page-lycee.scss */
-.element-actu-lycee a {
-  color: #606070;
-  background: #ECECED;
-  display: block;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0.125em;
+/* line 176, ../sass/content-type-style/_page-lycee.scss */
+.table_generik tbody {
+  border: 0;
+  text-align: center;
 }
-/* line 129, ../sass/content-type-style/_page-lycee.scss */
-.element-actu-lycee a:hover {
-  background: #ADC91F;
+/* line 180, ../sass/content-type-style/_page-lycee.scss */
+.table_generik tr {
+  border: 0px solid black;
+}
+/* line 183, ../sass/content-type-style/_page-lycee.scss */
+.table_generik tr.ligne_1 {
+  background: transparent;
+  color: black;
+}
+/* line 187, ../sass/content-type-style/_page-lycee.scss */
+.table_generik tr.ligne_2 {
+  background: #F29400;
   color: white;
+}
+/* line 191, ../sass/content-type-style/_page-lycee.scss */
+.table_generik td {
+  border: 0px solid black;
+}
+
+/* line 197, ../sass/content-type-style/_page-lycee.scss */
+#table_frais {
+  border: 0;
+  width: 100%;
+}
+/* line 200, ../sass/content-type-style/_page-lycee.scss */
+#table_frais tr.tf_line_1 {
+  color: white;
+  background: #01ABCF;
+}
+/* line 204, ../sass/content-type-style/_page-lycee.scss */
+#table_frais tr.tf_line_2 {
+  color: #DE603A;
+  background: white;
+}
+
+/*---- PAGE RESULTATS ¤¤¤*/
+/* line 212, ../sass/content-type-style/_page-lycee.scss */
+.table-resultats table {
+  width: 100%;
+}
+/* line 213, ../sass/content-type-style/_page-lycee.scss */
+.table-resultats tbody {
+  border: 0;
+}
+/* line 214, ../sass/content-type-style/_page-lycee.scss */
+.table-resultats tr {
+  border-bottom: 0.1em solid #F29400;
+}
+/* line 215, ../sass/content-type-style/_page-lycee.scss */
+.table-resultats tr:hover {
+  background: gainsboro;
 }
 
 /*-------------------------------------|
@@ -4811,283 +4826,55 @@ body .conteneur .conteneur-flex #colonne-3.page-actualites {
   }
 }
 
-/*Bloc vue actu générale - page actu globale*/
+/*######-------- ||| STYLE ||| --------######*/
 /* line 34, ../sass/content-type-style/_page-actualites.scss */
-h3.titre-bloc-actus-generales {
-  font-family: arista,Trebuchet MS, sans-serif;
-  text-align: center;
-  color: #F29400;
-  margin: 0;
-}
-
-/* line 40, ../sass/content-type-style/_page-actualites.scss */
-table#vue-bloc-actus-generales {
-  padding: 0.3125em;
-  width: 98%;
-  margin: 0 auto;
-}
-/* line 44, ../sass/content-type-style/_page-actualites.scss */
-table#vue-bloc-actus-generales span {
-  font-size: smaller;
-}
-/* line 47, ../sass/content-type-style/_page-actualites.scss */
-table#vue-bloc-actus-generales tr {
-  background: #ECECED;
-  background-color: #ECECED;
-  display: block;
-  margin: 0.2em auto;
-  width: inherit;
-}
-/* line 53, ../sass/content-type-style/_page-actualites.scss */
-table#vue-bloc-actus-generales tr:hover {
-  background: #e8efbf;
-}
-/* line 55, ../sass/content-type-style/_page-actualites.scss */
-table#vue-bloc-actus-generales td {
-  padding: 0.125em 0;
-  width: 100%;
-  display: inline-block;
-}
-/* line 59, ../sass/content-type-style/_page-actualites.scss */
-table#vue-bloc-actus-generales td:hover {
-  border-right: #ADC91F solid 0.125em;
-}
-
-/* line 66, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales hr {
-  border-top: 0.0625em solid #911381;
-  width: 75%;
-  margin: 0 auto;
-  display: none;
-}
-
-/* line 72, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales td a {
-  text-decoration: none;
-  font-size: initial;
-  font-weight: bold;
-  margin: 0;
-  color: #ADC91F;
-}
-
-/* line 81, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales img {
-  border: #911381 0.3em solid;
-  float: right;
-  margin: 0.125em 0.25em;
-  padding: 0.125em;
-}
-
-/* line 87, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales td a:hover {
-  color: #911381;
-}
-
-/* line 88, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales td img {
-  border: 0.125em solid #911381;
-  float: right;
-}
-
-/* line 89, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales td img :hover {
-  opacity: 80;
-}
-
-/* line 90, ../sass/content-type-style/_page-actualites.scss */
-#vue-bloc-actus-generales span.views-field-name, #vue-bloc-actus-generales span.views-field-created, #vue-bloc-actus-generales span.views-field-field-date-evenement-value {
-  font-style: italic;
-  font-size: small;
-  padding: 0 0.3125em;
-  text-align: right;
-}
-
-/* line 96, ../sass/content-type-style/_page-actualites.scss */
-#views-exposed-form-Actualites-liste-globale-block-1 {
-  width: 95%;
-  margin: 0.3125em auto;
-  background: transparent url(../images/zebra-gros-clair.gif) repeat;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  padding: 0.625em 0.3125em;
-}
-
-/* line 103, ../sass/content-type-style/_page-actualites.scss */
-#views-exposed-form-Actualites-liste-globale-block-1 .date-views-filter-wrapper {
-  width: auto;
-  min-width: 20%;
-}
-
-/* line 107, ../sass/content-type-style/_page-actualites.scss */
-#views-exposed-form-Actualites-liste-globale-block-1 .views-exposed-form .views-exposed-widget {
-  padding: .5em .5em 0 0;
-}
-/* line 110, ../sass/content-type-style/_page-actualites.scss */
-#views-exposed-form-Actualites-liste-globale-block-1 .views-widget-filter-field_date_evenement_value {
-  margin: 0 0 0 0.625em;
-}
-/* line 113, ../sass/content-type-style/_page-actualites.scss */
-#views-exposed-form-Actualites-liste-globale-block-1 .views-widget-filter-tid label, #views-exposed-form-Actualites-liste-globale-block-1 .views-widget-filter-field_date_evenement_value label {
-  font-size: small;
-}
-
-/*Pager liste actu globale*/
-/* line 121, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale ul.pager {
-  margin: 0.1875em auto;
-  width: 95%;
-  display: block;
-  padding: 0.1875em;
-}
-
-/* line 122, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale .pager li {
-  float: left;
-}
-
-/* line 124, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale .pager li a {
-  color: #606070;
-}
-
-/* line 125, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale .pager li.pager-item, .view-Actualites-liste-globale .pager li.pager-current {
-  padding: 0.1875em;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  border-radius: 0.8em;
-  height: 0.9375em;
-  width: 0.9375em;
-}
-
-/* line 127, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale .pager li.pager-item {
-  background: #911381;
-  color: #ECECED;
-}
-
-/* line 129, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale .pager li.pager-item a {
-  color: #ECECED;
-}
-
-/* line 130, ../sass/content-type-style/_page-actualites.scss */
-.view-Actualites-liste-globale .pager li.pager-current {
-  background: #ADC91F;
-  color: #606070;
-}
-
-/*Bloc actu association RSS sur page Actu globale*/
-/* line 134, ../sass/content-type-style/_page-actualites.scss */
-.block-aggregator {
-  font-size: small;
-}
-/* line 136, ../sass/content-type-style/_page-actualites.scss */
-.block-aggregator ul li {
-  list-style: none;
-}
-
-/* line 140, ../sass/content-type-style/_page-actualites.scss */
-#block-aggregator-feed-1 {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* line 145, ../sass/content-type-style/_page-actualites.scss */
-#block-aggregator-feed-1 h3 {
-  font-family: arista,Trebuchet MS, sans-serif;
-  text-align: center;
-  color: #ADC91F;
-  font-size: 1.5em;
-  margin: 0;
-}
-
-/* line 152, ../sass/content-type-style/_page-actualites.scss */
-#block-aggregator-feed-1 ul {
-  background: transparent url(../images/zebra-gros-clair.gif) repeat;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  padding: 0.3125em;
-  margin: 0.625em 0;
-}
-
-/* line 160, ../sass/content-type-style/_page-actualites.scss */
-#block-aggregator-feed-1 ul li {
-  margin: 0.3125em 0;
-}
-
-/* line 164, ../sass/content-type-style/_page-actualites.scss */
-#block-aggregator-feed-1 li a {
-  color: #9898a6;
-  text-decoration: none;
-  padding: 0.125em;
-  display: block;
-  background: white;
-}
-
-/* line 173, ../sass/content-type-style/_page-actualites.scss */
-#block-aggregator-feed-1 li a:hover {
-  color: white;
-  background: #ADC91F;
-}
-
-/*Vue liste des RP pour item actu*/
-/* line 178, ../sass/content-type-style/_page-actualites.scss */
-#bloc_actus_rp h3 {
-  font-family: arista,Trebuchet MS, sans-serif;
-  text-align: center;
-  color: #911381;
-  font-size: x-large;
-  margin: 0.3125em 0;
-}
-
-/* line 185, ../sass/content-type-style/_page-actualites.scss */
-.liste-revue-presse_defaut {
-  background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat top;
-  background-size: contain;
-}
-
-/* line 189, ../sass/content-type-style/_page-actualites.scss */
-.liste-revue-presse_defaut ul {
-  list-style: none;
-  width: 90%;
-  margin: 0 auto;
+#bloc_grawitz_actus, #bloc_autre_event {
+  background-color: white;
+  background-image: url(../images/bg_grawitz_actus_ht.jpg), url(../images/bg_grawitz_actus_bas.jpg);
+  background-position: left -30%, left bottom;
+  background-repeat: no-repeat;
   padding: 0.3125em 0;
 }
-
-/* line 195, ../sass/content-type-style/_page-actualites.scss */
-.liste-revue-presse_defaut li {
-  text-align: center;
+/* line 42, ../sass/content-type-style/_page-actualites.scss */
+#bloc_grawitz_actus h3, #bloc_autre_event h3 {
+  color: #911381;
+  font-family: "Arista", Trebuchet MS, sans-serif;
   padding: 0.3125em;
+  text-align: center;
+  font-size: x-large;
 }
 
-/* line 200, ../sass/content-type-style/_page-actualites.scss */
-.liste-revue-presse_defaut li a {
-  padding: 0.125em;
+/* line 52, ../sass/content-type-style/_page-actualites.scss */
+table.table_ga, table.table_ae {
+  margin: 0 0.3em;
+  width: 100%;
+}
+/* line 55, ../sass/content-type-style/_page-actualites.scss */
+table.table_ga tbody, table.table_ae tbody {
+  border: 0;
+}
+/* line 59, ../sass/content-type-style/_page-actualites.scss */
+table.table_ga td, table.table_ae td {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  display: block;
+  width: 90%;
+}
+/* line 65, ../sass/content-type-style/_page-actualites.scss */
+table.table_ga tr, table.table_ae tr {
+  background: none repeat scroll 0 0 transparent;
+  border: 0;
+}
+/* line 69, ../sass/content-type-style/_page-actualites.scss */
+table.table_ga a, table.table_ae a {
   text-decoration: none;
-  color: #9898a6;
-  font-weight: bold;
-  font-size: x-small;
+  color: #606070;
+  padding: 0.3em;
 }
-@media (min-width: 990px) {
-  /* line 200, ../sass/content-type-style/_page-actualites.scss */
-  .liste-revue-presse_defaut li a {
-    font-size: small;
-  }
-}
-
-/* line 211, ../sass/content-type-style/_page-actualites.scss */
-.liste-revue-presse_defaut li a:hover {
-  background: #ECECED;
-}
-
-/* line 214, ../sass/content-type-style/_page-actualites.scss */
-.liste-revue-presse_defaut hr {
-  border-top: 0.0625em solid #911381;
-  width: 75%;
-  margin: 0 auto;
+/* line 73, ../sass/content-type-style/_page-actualites.scss */
+table.table_ga a:hover, table.table_ae a:hover {
+  background: #F29400;
+  color: white;
 }
 
 /*-------------------------------------|
@@ -5532,13 +5319,67 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 
 /*######-------- ||| STYLE ||| --------######*/
 /* line 33, ../sass/content-type-style/_webform-contact.scss */
-#colonne-1.contact table, #colonne-1.contact tbody, #colonne-1.contact tr, #colonne-1.contact td, #colonne-1.contact form, #colonne-1.contact input[type="text"], #colonne-1.contact input[type="email"] {
+#colonne-2.webform table, #colonne-2.webform tbody, #colonne-2.webform tr, #colonne-2.webform td, #colonne-2.webform form, #colonne-2.webform input[type="text"], #colonne-2.webform input[type="email"] {
   width: 98%;
   display: block;
+  margin: 0 auto;
 }
-/* line 36, ../sass/content-type-style/_webform-contact.scss */
-#colonne-1.contact tbody {
+/* line 37, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform tbody {
   border: 0;
+}
+
+/* line 43, ../sass/content-type-style/_webform-contact.scss */
+h1.titre-webform {
+  font-size: 1.5em;
+  color: #911381;
+  line-height: 1em;
+}
+
+/* line 50, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform h2 {
+  color: #F29400;
+  padding: 0.3125em;
+}
+/* line 54, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform h3 {
+  color: #911381;
+  padding: 0.3125em;
+}
+/* line 58, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform h4 {
+  padding: 0.3125em;
+  color: #F29400;
+}
+/* line 62, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform p {
+  padding: 0.3125em;
+  font-size: small;
+}
+/* line 66, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform ul {
+  padding: 0.3125em;
+}
+/* line 72, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform a {
+  color: #F29400;
+  text-decoration: none;
+  padding: 2px;
+}
+/* line 76, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform a:hover {
+  color: white;
+  background: #F29400;
+}
+/* line 81, ../sass/content-type-style/_webform-contact.scss */
+#colonne-2.webform form {
+  background: transparent url(../images/bg_doc_utile_rp.gif) repeat;
+  padding: 0.2em;
+  position: relative;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  behavior: url(/sites/all/libraries/PIE/PIE.htc);
 }
 
 /*-------------------------------------|
@@ -6745,9 +6586,9 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   margin: 0.1em;
   background: #911381;
   border: 0.1em solid #fff;
-  -moz-box-shadow: 0.1em 0.1em 12px #aaa;
-  -webkit-box-shadow: 0.1em 0.1em 12px #aaa;
-  box-shadow: 0.1em 0.1em 12px #aaa;
+  -moz-box-shadow: 0.1em 0.1em 0.3em #aaa;
+  -webkit-box-shadow: 0.1em 0.1em 0.3em #aaa;
+  box-shadow: 0.1em 0.1em 0.3em #aaa;
 }
 /* line 22, ../sass/galeries/_flexslider-cyrano.scss */
 .vdl-galerie-image .flexslider .flex-control-paging li a:hover, .galerie-resto .flexslider .flex-control-paging li a:hover {
@@ -6853,5 +6694,104 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 }
 
 /*######-------- ||| POSITION NAV ||| --------######*/
+/*
+ * @file
+ * Style sheet for the views_accordion module
+ * 
+ * You can disable the loading of this file in your style options, just uncheck 'Use the module's default styling'
+ *
+ * .views-accordion-item wrappers get per-row classes like item-0, item-1 and so on
+ *  style each row independently like this:
+ * .views-accordion .item-1
+*/
+/* the whole accordion (only when js is enabled) */
+/* line 13, ../sass/galeries/_views_accordion.scss */
+.accordion-active {
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+/* all accordion sections */
+/* the content hidden/shown within each section (only when js is enabled) */
+/* line 23, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-content {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 28, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-content p {
+  margin: 0px;
+  /* so that the animation doesn't jump */
+}
+
+/* the header the user clicks to open sections (only when js is enabled)*/
+/* line 32, ../sass/galeries/_views_accordion.scss */
+.accordion-header {
+  cursor: pointer;
+  color: #111;
+  display: block;
+  /* we dont know what html tag it will be, otherwise spans will display weirdly */
+}
+
+/* line 37, ../sass/galeries/_views_accordion.scss */
+h3.accordion-header {
+  margin-bottom: 0;
+}
+
+/* line 41, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-header,
+h3.accordion-header {
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 47, ../sass/galeries/_views_accordion.scss */
+.accordion-item-even .accordion-header {
+  background-color: #ddd;
+  border-color: #ccc;
+}
+
+/*
+ * Don't use padding/margin top/bottom on .views-accordion-item, or the animation will jump for that ammount
+ * so apply it to the header and the first divs inside the accordion-content
+ */
+/* line 56, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-content div,
+.views-accordion-item .accordion-header,
+h3.accordion-header {
+  padding: 0.5em 1em;
+}
+
+/* line 61, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-content div div {
+  padding: 0;
+}
+
+/* header mouse-over and section-opened states (only when js is enabled)*/
+/* line 66, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-header-hover,
+h3.accordion-header-hover {
+  border-color: #fff;
+}
+
+/* line 70, ../sass/galeries/_views_accordion.scss */
+.views-accordion-item .accordion-header-active,
+h3.accordion-header-active {
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  background: #F29400;
+  /*couleur du bg de l'onglet actif'*/
+}
+
+/* Buttons */
+/* line 78, ../sass/galeries/_views_accordion.scss */
+span.stop-accordion,
+span.toggleAccordion {
+  display: block;
+  text-align: right;
+}
 
 /*# sourceMappingURL=application.css.map */

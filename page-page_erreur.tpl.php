@@ -1,4 +1,7 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>  
+<?php
+$theme_path = drupal_get_path('theme', 'cyrano_cg');
+include ($theme_path.'/includes/inc_header.php');
+?>
  <!-- ______________________ LAYOUT PAGE ERREUR _______________________ -->
 
   <!-- ______________________ CONTENU _______________________ -->
@@ -8,18 +11,23 @@
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top-pageErreur">
 	<span id="ariane"> <?php print $breadcrumb; ?></span>
+
               <?php print $content_top; ?>
-        
             </div> <!-- /#content-top -->
+            <?php endif; ?>
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
 			
          <div id="left-content-pageErreur">
-              
+               <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $left; ?>
           </div>
-            	<!--fin du contenu gauche -->
+             <!-- /sidebar-left -->
+
+		<!--fin du contenu gauche -->
         
         <div id="content-inner-pageErreur">
 		
@@ -73,7 +81,7 @@
 		
 <!-- ______________________ CONTENU BAS _______________________ -->
      <br clear="all" />
-          <?php if ($content_bottom): ?>
+<?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
@@ -81,6 +89,7 @@
     
 		  
 	 </div> <!-- /contentPage -->
-	  
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>    
+<?php
+$theme_path = drupal_get_path('theme', 'cyrano_cg');
+include ($theme_path.'/includes/inc_footer.php');
+?>

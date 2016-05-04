@@ -1,23 +1,16 @@
 <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyrano_cg');
 include ($theme_path.'/includes/inc_header.php');
 ?>
- <!-- ______________________ LAYOUT PAGE POLE _______________________ -->
+ <!-- ______________________ LAYOUT PAGE POLE  OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
 
-      <div class="content-global">
+      <div id="contentPage">
 
-         
-
-       <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
-
-
-       <div class="content-inner" class="page-MODELE">
-           
-            <!-- ______________________ CONTENT TOP _______________________ -->
+          <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top): ?>
             <div id="content-top">
-	<span class="ariane"> <?php print $breadcrumb; ?></span>
+	<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
@@ -29,9 +22,14 @@ include ($theme_path.'/includes/inc_header.php');
 	              <?php print $content_top_node; ?>
             </div> <!-- /#content-top-node -->
             <?php endif; ?>
+  
+       <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
+
+
+        <div id="content-inner-page-pole">
 
           <?php if ($mission || $messages || $help || $tabs): ?>
-            <div class="content-header">
+            <div id="content-header">
 
               <?php if ($mission): ?>
                 <div id="mission"><?php print $mission; ?></div>
@@ -48,11 +46,15 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div class="middle-content page-MODELE">
+          <div id="middle-content-page-pole">
 
             <?php print $content; ?>
               <?php print $feed_icons; ?>
-          </div> <!-- /#middle-content -->
+          </div> <!-- /#content-area -->
+
+
+
+
 
       </div> <!-- /content-inner /content -->
 
@@ -64,15 +66,18 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-    	 
+
+
+
+    	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
-            <div class="content-bottom">
+            <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /content-global -->
+	 </div> <!-- /contentPage -->
 <?php
-global $theme_path;
+$theme_path = drupal_get_path('theme', 'cyrano_cg');
 include ($theme_path.'/includes/inc_footer.php');
 ?>     
