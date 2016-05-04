@@ -36,7 +36,7 @@ h1.titre_ficheform{
 .docs-utiles-ficheform{
     background: $orange url(../images/bg_docs_ficheform.gif) no-repeat left top ;
     margin: 0 auto;
-    width: 86%;
+    max-width: 86%;
     padding: em(20px) 0;
      h3{
     text-align: center;
@@ -65,6 +65,7 @@ h1.titre_ficheform{
 }
 
 table.table-docs-utiles-ficheform{
+      border: 0;
     tr.even, tr.odd{
         border: 0;
     }
@@ -85,15 +86,23 @@ table.table-docs-utiles-ficheform{
     margin: 0 auto;
     text-align: center;
     width: 65%;
+    font-size: small;
 }
 
 /*Bloc 1 - Zone 1-2*/
-.deco-ficheform img{
-    border: 0.2em solid $violet;
-    padding: em(3px);
+.deco-ficheform {
     @include arrondis;
-    @include PIE;
-    position: relative;
+    width:95%;
+    margin: 0 auto;
+    img{
+        padding:0.3%;//pour passer en RWD
+        margin: 2% 0;
+        border: 0.2em solid $violet;
+        @include arrondis(0.8em);
+        @include PIE;
+        @include adaptable-img;
+
+    }
 }
 h2.philo-ficheform{
    font-family: 'Josefin Slab',Trebuchet MS;

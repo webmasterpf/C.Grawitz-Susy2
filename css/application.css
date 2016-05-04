@@ -5310,7 +5310,7 @@ h1.titre_ficheform {
 .docs-utiles-ficheform {
   background: #F29400 url(../images/bg_docs_ficheform.gif) no-repeat left top;
   margin: 0 auto;
-  width: 86%;
+  max-width: 86%;
   padding: 1.25em 0;
 }
 /* line 41, ../sass/content-type-style/_fiche-formation.scss */
@@ -5339,21 +5339,25 @@ h1.titre_ficheform {
   display: none;
 }
 
-/* line 68, ../sass/content-type-style/_fiche-formation.scss */
+/* line 67, ../sass/content-type-style/_fiche-formation.scss */
+table.table-docs-utiles-ficheform {
+  border: 0;
+}
+/* line 69, ../sass/content-type-style/_fiche-formation.scss */
 table.table-docs-utiles-ficheform tr.even, table.table-docs-utiles-ficheform tr.odd {
   border: 0;
 }
-/* line 72, ../sass/content-type-style/_fiche-formation.scss */
+/* line 73, ../sass/content-type-style/_fiche-formation.scss */
 table.table-docs-utiles-ficheform tr {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
 }
-/* line 76, ../sass/content-type-style/_fiche-formation.scss */
+/* line 77, ../sass/content-type-style/_fiche-formation.scss */
 table.table-docs-utiles-ficheform td {
   border: 0;
 }
 
-/* line 81, ../sass/content-type-style/_fiche-formation.scss */
+/* line 82, ../sass/content-type-style/_fiche-formation.scss */
 .taxo_ficheform {
   background: #ADC91F;
   color: #606070;
@@ -5361,21 +5365,31 @@ table.table-docs-utiles-ficheform td {
   margin: 0 auto;
   text-align: center;
   width: 65%;
+  font-size: small;
 }
 
 /*Bloc 1 - Zone 1-2*/
-/* line 91, ../sass/content-type-style/_fiche-formation.scss */
-.deco-ficheform img {
-  border: 0.2em solid #911381;
-  padding: 0.1875em;
+/* line 93, ../sass/content-type-style/_fiche-formation.scss */
+.deco-ficheform {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 97, ../sass/content-type-style/_fiche-formation.scss */
+.deco-ficheform img {
+  padding: 0.3%;
+  margin: 2% 0;
+  border: 0.2em solid #911381;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  border-radius: 0.8em;
   behavior: url(/sites/all/libraries/PIE/PIE.htc);
-  position: relative;
+  max-width: 100%;
 }
 
-/* line 98, ../sass/content-type-style/_fiche-formation.scss */
+/* line 107, ../sass/content-type-style/_fiche-formation.scss */
 h2.philo-ficheform {
   font-family: 'Josefin Slab',Trebuchet MS;
   font-size: larger;
@@ -5385,27 +5399,27 @@ h2.philo-ficheform {
   font-weight: 400;
 }
 
-/* line 108, ../sass/content-type-style/_fiche-formation.scss */
+/* line 117, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation p, #colonne-3.fiche-formation p {
   padding: 0.3125em;
 }
-/* line 111, ../sass/content-type-style/_fiche-formation.scss */
+/* line 120, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation strong, #colonne-3.fiche-formation strong {
   color: #F29400;
 }
-/* line 114, ../sass/content-type-style/_fiche-formation.scss */
+/* line 123, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation a, #colonne-3.fiche-formation a {
   color: #F29400;
 }
-/* line 116, ../sass/content-type-style/_fiche-formation.scss */
+/* line 125, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation a:hover, #colonne-3.fiche-formation a:hover {
   text-decoration: none;
 }
-/* line 121, ../sass/content-type-style/_fiche-formation.scss */
+/* line 130, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation h2, #colonne-3.fiche-formation h2 {
   color: #DE603A;
 }
-/* line 124, ../sass/content-type-style/_fiche-formation.scss */
+/* line 133, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation h3, #colonne-3.fiche-formation h3 {
   color: #01ABCF;
 }
