@@ -178,6 +178,7 @@ filter : alpha(opacity=$opacite); /* IE < 8 */
 @mixin border-anthracite-anthracite { border-left: em(1px) solid $gris-anthracite; border-right: em(1px) solid $gris-anthracite;}
 @mixin border-anthracite-orangePF{border-left: em(1px) solid $gris-anthracite;border-right: em(1px) solid $orange-fonce;}
 @mixin border-orangePF-orangePF{border-left: em(1px) solid $orange-fonce;border-right: em(1px) solid $orange-fonce;}
+@mixin border-orange-violet{border-left: em(1px) solid $orange;border-right: em(1px) solid $violet;}
 
 /*//////////////// BORDER LEFT \\\\\\\\\\\\\\\\*/
 @mixin border-L-bleu{border-left: em(1px) solid $bleu-turquoise;}

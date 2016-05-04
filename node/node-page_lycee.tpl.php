@@ -55,7 +55,7 @@ include($theme_path .'/includes/regions_inc/inc_region_col_2.php');
         </div>
            <?php endif;?>
    
-        <br clear="all"/>
+        
           <?php
                 global $theme_path;
               include ($theme_path.'/includes/dedicates_inc/inc_vue_grawitz_actus.php');

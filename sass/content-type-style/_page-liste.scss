@@ -1,0 +1,89 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _CONTENT-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM              |
+|               NODE.TPL                    |
+|               LISTE                            |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+//@include breakpoint(($desktop,$tablet)){}
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    #colonne-1.CLASS_NAME{order:1;}
+    #colonne-2.CLASS_NAME{order:2;}
+    #colonne-3.CLASS_NAME{order:3;}
+    @include breakpoint ($desktop){}
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur .conteneur-flex{
+   @include breakpoint(($desktop,$tablet)){
+        }
+    
+}
+body .conteneur{
+    @include breakpoint(($desktop,$tablet)){
+        #colonne-1.page-liste{
+            @include border-R-violet;
+        }
+    }
+
+}
+/*######-------- ||| STYLE ||| --------######*/
+.table_liste_vdl{
+    padding: em(5px);
+    tbody{}
+    tr{
+        margin: em(5px) 0;
+        border: 0;
+        background: none;
+    }
+    td{
+        margin: em(5px) 0;
+        display: block;
+        padding: em(3px);
+        float: left;
+        width: 95%;
+    }
+    a{
+        text-decoration: none;
+        font-size: inherit;
+        font-weight: bold;
+        margin: 0 em(10px);
+        color: $orange;
+        &:hover{
+            color: $violet;
+        }
+    }
+    hr{
+        border: 0.09em solid $orange;
+        width: 75%;
+        margin: 0 auto;
+        
+    }
+    .deco_vdl img{
+        float: right;
+        border: 0.2em solid $orange;
+    }
+}
+
+/*==
+== Pager pour pages archives(listes) ===
+==*/
+#bloc_liste_vdl ul.pager,#bloc_liste_lycee-entreprise ul.pager,#bloc_liste_actus ul.pager{margin: 3px auto;width: 95%;display: block;padding: 3px;}
+#bloc_liste_vdl .pager li,#bloc_liste_lycee-entreprise .pager li,#bloc_liste_actus .pager li
+{float: left;}
+#bloc_liste_vdl .pager li a,#bloc_liste_lycee-entreprise .pager li a,#bloc_liste_actus .pager li a{color:#1F1F1F;}
+#bloc_liste_vdl .pager li.pager-item,#bloc_liste_lycee-entreprise .pager li.pager-item,#bloc_liste_actus .pager li.pager-item,
+#bloc_liste_vdl .pager li.pager-current,#bloc_liste_lycee-entreprise .pager li.pager-current,#bloc_liste_actus .pager li.pager-current
+{padding: 3px;border-radius: 10px; height: 15px;width: 15px;}
+#bloc_liste_vdl .pager li.pager-item,#bloc_liste_lycee-entreprise .pager li.pager-item,#bloc_liste_actus .pager li.pager-item
+{background:$violet ;color:$gris-clair;}
+#bloc_liste_vdl .pager li.pager-item a,#bloc_liste_lycee-entreprise .pager li.pager-item a,#bloc_liste_actus .pager li.pager-item a{color:#EFEFEF;}
+#bloc_liste_vdl .pager li.pager-current,#bloc_liste_lycee-entreprise .pager li.pager-current,#bloc_liste_actus .pager li.pager-current
+{background: $orange;color:$gris-anthracite;}

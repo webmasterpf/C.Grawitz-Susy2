@@ -14,12 +14,12 @@
       <div id="col_G1" class="page_vdl_content_col_G1">
            
            <?php 
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
+           global $theme_path;
               include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
               ?>
              <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/regions_inc/inc_region_col_G1.php');
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
@@ -40,13 +40,13 @@
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
 
                  <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
+           global $theme_path;
               include ($theme_path.'/includes/inc_liste_vdl.php');
               ?>
 
                     <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/regions_inc/inc_region_col_G2.php');
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_col_2.php');
               ?>
 
             </div>
@@ -60,8 +60,8 @@
 
 
     <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/regions_inc/inc_region_col_G3.php');
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_col_3.php');
               ?>
         </div>
 

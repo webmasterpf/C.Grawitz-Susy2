@@ -27,20 +27,20 @@
          * .col2_layout_200_590_200{} .col2_layout_330_all{} .col2_layout_18_56_25{}
          * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
          */?>
-        <div id="col_G1" class="pagePole_content_col_G1">
+        <div id="colonne-1" class="layout_3col_all4 page-pole">
        
              <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_pole_liste_MSAC.php');
+           global $theme_path;
+              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MSAC.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-         <div id="col_G2" class="pagePole_content_col_G2">
+         <div id="colonne-2" class="layout_3col_all4 page-pole">
 
           <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_pole_liste_MRSP.php');
+           global $theme_path;
+              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MRSP.php');
               ?>
 
         
@@ -48,10 +48,10 @@
         </div>
 
         <!--______________COLONNE 3________________ -->
-         <div id="col_G3" class="pagePole_content_col_G3">
+         <div id="colonne-3" class="layout_3col_all4last page-pole">
            <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_cg');
-              include ($theme_path.'/includes/inc_pole_liste_FC.php');
+           global $theme_path;
+              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_FC.php');
               ?>
         </div>
 

@@ -30,7 +30,7 @@ body .conteneur {
 }
 /*######-------- ||| STYLE ||| --------######*/
 #colonne-2.webform{
-    table,tbody,tr,td,form,input[type="text"],input[type="email"]{
+    table,tbody,tr,td{
           width: 98%;display: block;
           margin: 0 auto;
       }
@@ -43,7 +43,7 @@ body .conteneur {
 h1.titre-webform{
     font-size: em(24px);
     color: $violet;
-    line-height: 1.0em
+    line-height: 1.0em;
 }
 
 #colonne-2.webform{
@@ -85,4 +85,17 @@ h1.titre-webform{
     @include arrondis;
     @include PIE;
     }        
+}
+/*---- STYLE ELEMENTS FORMULAIRE ----*/
+form.webform-client-form{
+        width: 95%;margin: 0 auto;  display: block;
+    label{font-size: smaller;}
+    input[type="text"],input[type="email"],input[type="submit"],select{
+    width: 95%;margin: 0 auto;  display: block;
+    }
+    input[type="submit"]{
+        width: 95%;margin: 0 auto;  display: block;
+        @include cesure-txt;
+    }
+    .form-item{margin-bottom: 0.5em;margin-top: 0.5em;}
 }

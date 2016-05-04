@@ -25,9 +25,9 @@ body .conteneur .conteneur-flex{
 }
 
 /*######-------- ||| BORDURES ||| --------######*/
-body .conteneur .conteneur-flex{
+body .conteneur{
     @include breakpoint ($desktop){
-        #colonne-2.page-lycee{@include border-vert-violet;}
+        #colonne-2.page-lycee{@include border-orange-violet;}
     }
     
 }

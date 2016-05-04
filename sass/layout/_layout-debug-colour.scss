@@ -456,8 +456,22 @@ body .conteneur{
       }
   }
   
-  .col1_layout_9_3{}
-  .col2_layout_9_3{}
+  .col1_layout_9_3{
+        @include breakpoint ($tablet){
+          background: #00CC99;
+      }
+      @include breakpoint ($desktop){
+          background: #cccccc;
+      }
+  }
+  .col2_layout_9_3{
+          @include breakpoint ($tablet){
+          background: tomato;
+      }
+      @include breakpoint ($desktop){
+          background: thistle;
+      }
+  }
   
   .col1_layout_10_2{}
   .col2_layout_10_2{}
