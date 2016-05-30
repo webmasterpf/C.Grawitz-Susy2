@@ -4813,8 +4813,8 @@ body .conteneur .conteneur-flex #colonne-3.page-actualites {
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px) {
   /* line 28, ../sass/content-type-style/_page-actualites.scss */
-  body .conteneur .conteneur-flex #colonne-2.page-actualites {
-    border-left: 0.0625em solid #ADC91F;
+  body .conteneur #colonne-2.page-actualites {
+    border-left: 0.0625em solid #F29400;
     border-right: 0.0625em solid #911381;
   }
 }
@@ -4822,51 +4822,91 @@ body .conteneur .conteneur-flex #colonne-3.page-actualites {
 /*######-------- ||| STYLE ||| --------######*/
 /* line 33, ../sass/content-type-style/_page-actualites.scss */
 h1.titre_page_actualites {
-  margin: 3px;
+  margin: 0.1875em;
+  color: #F29400;
 }
 
-/* line 38, ../sass/content-type-style/_page-actualites.scss */
+/* line 39, ../sass/content-type-style/_page-actualites.scss */
 #bloc_liste_actus .views-exposed-form {
   width: 95%;
   margin: 0 auto;
 }
-/* line 42, ../sass/content-type-style/_page-actualites.scss */
+/* line 43, ../sass/content-type-style/_page-actualites.scss */
 #bloc_liste_actus .date-views-filter-wrapper {
   width: auto;
   min-width: 20%;
 }
-/* line 46, ../sass/content-type-style/_page-actualites.scss */
+/* line 47, ../sass/content-type-style/_page-actualites.scss */
 #bloc_liste_actus span.views-field-name, #bloc_liste_actus span.views-field-created, #bloc_liste_actus span.views-field-field-date-evenement-value {
   font-style: italic;
   font-size: x-small;
   padding: 0 0.3125em;
   text-align: right;
 }
-/* line 53, ../sass/content-type-style/_page-actualites.scss */
+/* line 54, ../sass/content-type-style/_page-actualites.scss */
 #bloc_liste_actus span.date-display-single {
   font-style: italic;
   font-size: x-small;
   padding: 0 0.3125em;
   text-align: right;
 }
-
 /* line 61, ../sass/content-type-style/_page-actualites.scss */
-.table_liste_actualites {
-  padding: 0.3125em;
+#bloc_liste_actus .table-liste-actualites ul {
+  list-style: none;
 }
 /* line 64, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus .table-liste-actualites li {
+  list-style: none;
+}
+/* line 67, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus .table-liste-actualites a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  margin: 0 0.625em;
+  color: #F29400;
+}
+/* line 73, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus .table-liste-actualites a:hover {
+  color: #911381;
+}
+/* line 78, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus .table-liste-actualites hr {
+  border-top: 0.2em solid #F29400;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 86, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites {
+  padding: 0.3125em;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+/* line 91, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites tbody {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 95, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_actualites tr {
   margin: 0.3125em 0;
   border: 0;
   background: none;
 }
-/* line 69, ../sass/content-type-style/_page-actualites.scss */
+/* line 100, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_actualites td {
-  margin: 0.3125em 0;
-  display: block;
   padding: 0.1875em;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
 }
-/* line 74, ../sass/content-type-style/_page-actualites.scss */
+/* line 106, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites ul {
+  list-style: none;
+}
+/* line 110, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_actualites a {
   text-decoration: none;
   font-size: medium;
@@ -4874,11 +4914,11 @@ h1.titre_page_actualites {
   margin: 0 0.625em;
   color: #F29400;
 }
-/* line 80, ../sass/content-type-style/_page-actualites.scss */
+/* line 116, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_actualites a:hover {
   color: #911381;
 }
-/* line 85, ../sass/content-type-style/_page-actualites.scss */
+/* line 121, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_actualites hr {
   border-top: 0.2em solid #F29400;
   width: 75%;
@@ -4886,76 +4926,72 @@ h1.titre_page_actualites {
 }
 
 /*Bloc liste RP colonne G3*/
-/* line 94, ../sass/content-type-style/_page-actualites.scss */
+/* line 130, ../sass/content-type-style/_page-actualites.scss */
 #bloc_liste_rp h3 {
-  font-family: arista,Trebuchet MS, sans-serif;
+  font-family: "Arista", Trebuchet MS, sans-serif;
   text-align: center;
-  color: #00ACD1;
-  font-size: 1.5em;
-  margin: 5px 0;
+  color: #01ABCF;
+  font-size: large;
+  margin: 0.3125em 0;
 }
 
-/* line 101, ../sass/content-type-style/_page-actualites.scss */
+/* line 137, ../sass/content-type-style/_page-actualites.scss */
 #bloc_liste_rp p {
   text-align: center;
-  padding: 5px;
+  padding: 0.3125em;
 }
 
-/* line 105, ../sass/content-type-style/_page-actualites.scss */
+/* line 141, ../sass/content-type-style/_page-actualites.scss */
 .liste-revue-presse_defaut ul {
   list-style: none;
-  width: 190px;
-  margin: 0 auto;
-  padding: 5px 0;
+  padding: 0.3125em 0;
 }
 
-/* line 112, ../sass/content-type-style/_page-actualites.scss */
+/* line 146, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp {
   background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  width: 210px;
+  width: 95%;
 }
-
-/* line 117, ../sass/content-type-style/_page-actualites.scss */
+/* line 151, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp tbody {
   background: none;
   border: 0 none;
 }
-
-/* line 121, ../sass/content-type-style/_page-actualites.scss */
+/* line 155, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp tr {
   background: none;
   border: 0 none;
 }
-
-/* line 125, ../sass/content-type-style/_page-actualites.scss */
+/* line 159, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp td {
   text-align: center;
-  padding: 5px;
+  padding: 0.3125em;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
-
-/* line 129, ../sass/content-type-style/_page-actualites.scss */
+/* line 166, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp a {
-  padding: 2px;
+  padding: 0.125em;
   text-decoration: none;
-  color: #656571;
+  color: #606070;
   font-weight: bold;
 }
-
-/* line 135, ../sass/content-type-style/_page-actualites.scss */
+/* line 171, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp a:hover {
-  background: #D0D1D2;
+  background: #ECECED;
 }
-
-/* line 138, ../sass/content-type-style/_page-actualites.scss */
+/* line 176, ../sass/content-type-style/_page-actualites.scss */
 .table_liste_rp hr {
-  border-top: 1px solid #00ACD1;
+  border-top: 0.2em solid #01ABCF;
   width: 75%;
   margin: 0 auto;
 }
 
 /*Bloc RSS*/
-/* line 144, ../sass/content-type-style/_page-actualites.scss */
+/* line 184, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 {
   background: #F29400 url(../images/bg_docs_ficheform.gif) no-repeat left top;
   margin: 0 auto;
@@ -4963,14 +4999,14 @@ h1.titre_page_actualites {
   padding: 20px 0;
 }
 
-/* line 150, ../sass/content-type-style/_page-actualites.scss */
+/* line 190, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 h3 {
   text-align: center;
   color: white;
   margin: 10px 0;
 }
 
-/* line 155, ../sass/content-type-style/_page-actualites.scss */
+/* line 195, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 a {
   color: #606070;
   display: list-item;
@@ -4981,30 +5017,30 @@ h1.titre_page_actualites {
   text-indent: 2px;
 }
 
-/* line 164, ../sass/content-type-style/_page-actualites.scss */
+/* line 204, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 a:hover {
   background: #911381;
   color: white;
   text-indent: 5px;
 }
 
-/* line 169, ../sass/content-type-style/_page-actualites.scss */
+/* line 209, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 ul li {
   margin: 0;
   list-style: none;
 }
 
-/* line 173, ../sass/content-type-style/_page-actualites.scss */
+/* line 213, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 li {
   list-style: none;
 }
 
-/* line 176, ../sass/content-type-style/_page-actualites.scss */
+/* line 216, ../sass/content-type-style/_page-actualites.scss */
 #block-aggregator-feed-1 .filefield-icon {
   display: none;
 }
 
-/* line 179, ../sass/content-type-style/_page-actualites.scss */
+/* line 219, ../sass/content-type-style/_page-actualites.scss */
 #bloc_grawitz_actus, #bloc_autre_event {
   background-color: white;
   background-image: url(../images/bg_grawitz_actus_ht.jpg), url(../images/bg_grawitz_actus_bas.jpg);
@@ -5012,7 +5048,7 @@ h1.titre_page_actualites {
   background-repeat: no-repeat;
   padding: 0.3125em 0;
 }
-/* line 187, ../sass/content-type-style/_page-actualites.scss */
+/* line 227, ../sass/content-type-style/_page-actualites.scss */
 #bloc_grawitz_actus h3, #bloc_autre_event h3 {
   color: #911381;
   font-family: "Arista", Trebuchet MS, sans-serif;
@@ -5021,35 +5057,35 @@ h1.titre_page_actualites {
   font-size: x-large;
 }
 
-/* line 197, ../sass/content-type-style/_page-actualites.scss */
+/* line 237, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga, table.table_ae {
   margin: 0 0.3em;
   width: 100%;
 }
-/* line 200, ../sass/content-type-style/_page-actualites.scss */
+/* line 240, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga tbody, table.table_ae tbody {
   border: 0;
 }
-/* line 204, ../sass/content-type-style/_page-actualites.scss */
+/* line 244, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga td, table.table_ae td {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
   display: block;
   width: 90%;
 }
-/* line 210, ../sass/content-type-style/_page-actualites.scss */
+/* line 250, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga tr, table.table_ae tr {
   background: none repeat scroll 0 0 transparent;
   border: 0;
 }
-/* line 214, ../sass/content-type-style/_page-actualites.scss */
+/* line 254, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga a, table.table_ae a {
   text-decoration: none;
   color: #606070;
   padding: 0.3em;
   font-size: small;
 }
-/* line 219, ../sass/content-type-style/_page-actualites.scss */
+/* line 259, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga a:hover, table.table_ae a:hover {
   background: #F29400;
   color: white;
@@ -5729,6 +5765,90 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 #bloc_liste_vdl .pager li.pager-current, #bloc_liste_lycee-entreprise .pager li.pager-current, #bloc_liste_actus .pager li.pager-current {
   background: #F29400;
   color: #606070;
+}
+
+/*********************************
+----------------------------------
+---- PAGE LYCEE-ENTREPRISE NODE.TPL --
+----------- LISTE --------------
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+/* line 98, ../sass/content-type-style/_page-liste.scss */
+h1.titre_page_lycee_entreprise {
+  margin: 3px;
+}
+
+/* line 102, ../sass/content-type-style/_page-liste.scss */
+#bloc_liste_lycee-entreprise .views-exposed-form {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 105, ../sass/content-type-style/_page-liste.scss */
+#bloc_liste_lycee-entreprise .views-exposed-form .date-views-filter-wrapper {
+  width: auto;
+  min-width: 20%;
+}
+/* line 109, ../sass/content-type-style/_page-liste.scss */
+#bloc_liste_lycee-entreprise .views-exposed-form span.views-field-name, #bloc_liste_lycee-entreprise .views-exposed-form span.views-field-created, #bloc_liste_lycee-entreprise .views-exposed-form span.views-field-field-date-evenement-value {
+  font-style: italic;
+  font-size: small;
+  padding: 0 0.3125em;
+  text-align: right;
+}
+/* line 116, ../sass/content-type-style/_page-liste.scss */
+#bloc_liste_lycee-entreprise .views-exposed-form span.date-display-single {
+  font-style: italic;
+  font-size: small;
+  padding: 0 0.3125em;
+  text-align: right;
+}
+
+/* line 124, ../sass/content-type-style/_page-liste.scss */
+.table_liste_lycee_entreprise {
+  padding: 0.3125em;
+}
+/* line 127, ../sass/content-type-style/_page-liste.scss */
+.table_liste_lycee_entreprise tr {
+  margin: 0.3125em 0;
+  border: 0;
+  background: none;
+}
+/* line 132, ../sass/content-type-style/_page-liste.scss */
+.table_liste_lycee_entreprise td {
+  margin: 0.3125em 0;
+  display: block;
+  padding: 3px;
+}
+/* line 137, ../sass/content-type-style/_page-liste.scss */
+.table_liste_lycee_entreprise a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  margin: 0 0.625em;
+  color: #F29400;
+}
+/* line 143, ../sass/content-type-style/_page-liste.scss */
+.table_liste_lycee_entreprise a:hover {
+  color: #911381;
+}
+/* line 148, ../sass/content-type-style/_page-liste.scss */
+.table_liste_lycee_entreprise hr {
+  border-top: 0.2em solid #F29400;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*Vue dans region via bloc*/
+/* line 156, ../sass/content-type-style/_page-liste.scss */
+#block-views-Liste_lycee_entreprise-block_1 .views-exposed-form {
+  width: 90%;
+  display: block;
+  margin: 2px auto;
+}
+
+/* line 159, ../sass/content-type-style/_page-liste.scss */
+#block-views-Liste_lycee_entreprise-block_1 .views-widget-filter-field_date_evenement_value {
+  width: 90%;
+  display: block;
 }
 
 /*
