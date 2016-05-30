@@ -5672,23 +5672,42 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
   /* line 31, ../sass/content-type-style/_page-liste.scss */
-  body .conteneur #colonne-1.page-liste {
+  body .conteneur #colonne-2.page-lycee-entreprise {
+    border-left: 0.0625em solid #F29400;
     border-right: 0.0625em solid #911381;
   }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
 /* line 38, ../sass/content-type-style/_page-liste.scss */
+h1.titre_page_lycee_entreprise {
+  color: #F29400;
+}
+
+/* line 41, ../sass/content-type-style/_page-liste.scss */
+#cg_logo_entreprise img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 46, ../sass/content-type-style/_page-liste.scss */
+#colonne-2.page-lycee-entreprise p {
+  line-height: 1em;
+  padding: 0.05em;
+  margin: 0;
+}
+
+/* line 52, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl {
   padding: 0.3125em;
 }
-/* line 41, ../sass/content-type-style/_page-liste.scss */
+/* line 55, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl tr {
   margin: 0.3125em 0;
   border: 0;
   background: none;
 }
-/* line 46, ../sass/content-type-style/_page-liste.scss */
+/* line 60, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl td {
   margin: 0.3125em 0;
   display: block;
@@ -5696,7 +5715,7 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
   float: left;
   width: 95%;
 }
-/* line 53, ../sass/content-type-style/_page-liste.scss */
+/* line 67, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl a {
   text-decoration: none;
   font-size: inherit;
@@ -5704,17 +5723,17 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
   margin: 0 0.625em;
   color: #F29400;
 }
-/* line 59, ../sass/content-type-style/_page-liste.scss */
+/* line 73, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl a:hover {
   color: #911381;
 }
-/* line 63, ../sass/content-type-style/_page-liste.scss */
+/* line 77, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl hr {
   border: 0.09em solid #F29400;
   width: 75%;
   margin: 0 auto;
 }
-/* line 69, ../sass/content-type-style/_page-liste.scss */
+/* line 83, ../sass/content-type-style/_page-liste.scss */
 .table_liste_vdl .deco_vdl img {
   float: right;
   border: 0.2em solid #F29400;
@@ -5723,45 +5742,45 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 /*==
 == Pager pour pages archives(listes) ===
 ==*/
-/* line 78, ../sass/content-type-style/_page-liste.scss */
+/* line 92, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl ul.pager, #bloc_liste_lycee-entreprise ul.pager, #bloc_liste_actus ul.pager {
-  margin: 3px auto;
+  margin: 0.1875em auto;
   width: 95%;
   display: block;
-  padding: 3px;
+  padding: 0.1875em;
 }
 
-/* line 79, ../sass/content-type-style/_page-liste.scss */
+/* line 93, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl .pager li, #bloc_liste_lycee-entreprise .pager li, #bloc_liste_actus .pager li {
   float: left;
 }
 
-/* line 81, ../sass/content-type-style/_page-liste.scss */
+/* line 95, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl .pager li a, #bloc_liste_lycee-entreprise .pager li a, #bloc_liste_actus .pager li a {
-  color: #1F1F1F;
+  color: #606070;
 }
 
-/* line 82, ../sass/content-type-style/_page-liste.scss */
+/* line 96, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl .pager li.pager-item, #bloc_liste_lycee-entreprise .pager li.pager-item, #bloc_liste_actus .pager li.pager-item,
 #bloc_liste_vdl .pager li.pager-current, #bloc_liste_lycee-entreprise .pager li.pager-current, #bloc_liste_actus .pager li.pager-current {
-  padding: 3px;
-  border-radius: 10px;
-  height: 15px;
-  width: 15px;
+  padding: 0.1875em;
+  border-radius: 0.625em;
+  height: 0.9375em;
+  width: 0.9375em;
 }
 
-/* line 85, ../sass/content-type-style/_page-liste.scss */
+/* line 99, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl .pager li.pager-item, #bloc_liste_lycee-entreprise .pager li.pager-item, #bloc_liste_actus .pager li.pager-item {
   background: #911381;
   color: #ECECED;
 }
 
-/* line 87, ../sass/content-type-style/_page-liste.scss */
+/* line 101, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl .pager li.pager-item a, #bloc_liste_lycee-entreprise .pager li.pager-item a, #bloc_liste_actus .pager li.pager-item a {
   color: #EFEFEF;
 }
 
-/* line 88, ../sass/content-type-style/_page-liste.scss */
+/* line 102, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_vdl .pager li.pager-current, #bloc_liste_lycee-entreprise .pager li.pager-current, #bloc_liste_actus .pager li.pager-current {
   background: #F29400;
   color: #606070;
@@ -5772,29 +5791,29 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 ---- PAGE LYCEE-ENTREPRISE NODE.TPL --
 ----------- LISTE --------------
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
-/* line 98, ../sass/content-type-style/_page-liste.scss */
+/* line 112, ../sass/content-type-style/_page-liste.scss */
 h1.titre_page_lycee_entreprise {
-  margin: 3px;
+  margin: 0.1875em;
 }
 
-/* line 102, ../sass/content-type-style/_page-liste.scss */
+/* line 116, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_lycee-entreprise .views-exposed-form {
   width: 95%;
   margin: 0 auto;
 }
-/* line 105, ../sass/content-type-style/_page-liste.scss */
+/* line 119, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_lycee-entreprise .views-exposed-form .date-views-filter-wrapper {
   width: auto;
   min-width: 20%;
 }
-/* line 109, ../sass/content-type-style/_page-liste.scss */
+/* line 123, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_lycee-entreprise .views-exposed-form span.views-field-name, #bloc_liste_lycee-entreprise .views-exposed-form span.views-field-created, #bloc_liste_lycee-entreprise .views-exposed-form span.views-field-field-date-evenement-value {
   font-style: italic;
   font-size: small;
   padding: 0 0.3125em;
   text-align: right;
 }
-/* line 116, ../sass/content-type-style/_page-liste.scss */
+/* line 130, ../sass/content-type-style/_page-liste.scss */
 #bloc_liste_lycee-entreprise .views-exposed-form span.date-display-single {
   font-style: italic;
   font-size: small;
@@ -5802,23 +5821,23 @@ h1.titre_page_lycee_entreprise {
   text-align: right;
 }
 
-/* line 124, ../sass/content-type-style/_page-liste.scss */
+/* line 138, ../sass/content-type-style/_page-liste.scss */
 .table_liste_lycee_entreprise {
   padding: 0.3125em;
 }
-/* line 127, ../sass/content-type-style/_page-liste.scss */
+/* line 141, ../sass/content-type-style/_page-liste.scss */
 .table_liste_lycee_entreprise tr {
   margin: 0.3125em 0;
   border: 0;
   background: none;
 }
-/* line 132, ../sass/content-type-style/_page-liste.scss */
+/* line 146, ../sass/content-type-style/_page-liste.scss */
 .table_liste_lycee_entreprise td {
   margin: 0.3125em 0;
   display: block;
-  padding: 3px;
+  padding: 0.1875em;
 }
-/* line 137, ../sass/content-type-style/_page-liste.scss */
+/* line 151, ../sass/content-type-style/_page-liste.scss */
 .table_liste_lycee_entreprise a {
   text-decoration: none;
   font-size: medium;
@@ -5826,11 +5845,11 @@ h1.titre_page_lycee_entreprise {
   margin: 0 0.625em;
   color: #F29400;
 }
-/* line 143, ../sass/content-type-style/_page-liste.scss */
+/* line 157, ../sass/content-type-style/_page-liste.scss */
 .table_liste_lycee_entreprise a:hover {
   color: #911381;
 }
-/* line 148, ../sass/content-type-style/_page-liste.scss */
+/* line 162, ../sass/content-type-style/_page-liste.scss */
 .table_liste_lycee_entreprise hr {
   border-top: 0.2em solid #F29400;
   width: 75%;
@@ -5838,14 +5857,14 @@ h1.titre_page_lycee_entreprise {
 }
 
 /*Vue dans region via bloc*/
-/* line 156, ../sass/content-type-style/_page-liste.scss */
+/* line 170, ../sass/content-type-style/_page-liste.scss */
 #block-views-Liste_lycee_entreprise-block_1 .views-exposed-form {
   width: 90%;
   display: block;
-  margin: 2px auto;
+  margin: 0.125em auto;
 }
 
-/* line 159, ../sass/content-type-style/_page-liste.scss */
+/* line 173, ../sass/content-type-style/_page-liste.scss */
 #block-views-Liste_lycee_entreprise-block_1 .views-widget-filter-field_date_evenement_value {
   width: 90%;
   display: block;
