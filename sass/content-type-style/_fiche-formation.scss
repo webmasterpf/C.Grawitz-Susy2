@@ -69,7 +69,9 @@ table.table-docs-utiles-ficheform{
     tr.even, tr.odd{
         border: 0;
     }
-    tbody{}
+    tbody{
+        border: 0;
+    }
     tr{
         background: none repeat scroll 0 0 transparent;
         border: 0 none;
@@ -111,6 +113,8 @@ h2.philo-ficheform{
     color: $orange;
     font-style: italic;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 #colonne-2.fiche-formation,#colonne-3.fiche-formation{

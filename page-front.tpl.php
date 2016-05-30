@@ -27,8 +27,6 @@ include ($theme_path.'/includes/inc_header.php');
 
 <!-- ______________________ PARTIE BAS DROITE _______________________ -->
 
-
-
         <?php if ($HPBasD): ?>
      <div class="HPBasDroit"><?php print $HPBasD; ?></div>
         <?php endif; ?>
@@ -42,8 +40,6 @@ include ($theme_path.'/includes/inc_header.php');
 
 
     </div><!-- /#content-bottom -->
-
-
 
 <?php
 global $theme_path;

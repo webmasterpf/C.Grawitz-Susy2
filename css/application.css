@@ -4820,7 +4820,191 @@ body .conteneur .conteneur-flex #colonne-3.page-actualites {
 }
 
 /*######-------- ||| STYLE ||| --------######*/
-/* line 34, ../sass/content-type-style/_page-actualites.scss */
+/* line 33, ../sass/content-type-style/_page-actualites.scss */
+h1.titre_page_actualites {
+  margin: 3px;
+}
+
+/* line 38, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus .views-exposed-form {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 42, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus .date-views-filter-wrapper {
+  width: auto;
+  min-width: 20%;
+}
+/* line 46, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus span.views-field-name, #bloc_liste_actus span.views-field-created, #bloc_liste_actus span.views-field-field-date-evenement-value {
+  font-style: italic;
+  font-size: x-small;
+  padding: 0 0.3125em;
+  text-align: right;
+}
+/* line 53, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_actus span.date-display-single {
+  font-style: italic;
+  font-size: x-small;
+  padding: 0 0.3125em;
+  text-align: right;
+}
+
+/* line 61, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites {
+  padding: 0.3125em;
+}
+/* line 64, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites tr {
+  margin: 0.3125em 0;
+  border: 0;
+  background: none;
+}
+/* line 69, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites td {
+  margin: 0.3125em 0;
+  display: block;
+  padding: 0.1875em;
+}
+/* line 74, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  margin: 0 0.625em;
+  color: #F29400;
+}
+/* line 80, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites a:hover {
+  color: #911381;
+}
+/* line 85, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_actualites hr {
+  border-top: 0.2em solid #F29400;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*Bloc liste RP colonne G3*/
+/* line 94, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_rp h3 {
+  font-family: arista,Trebuchet MS, sans-serif;
+  text-align: center;
+  color: #00ACD1;
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+/* line 101, ../sass/content-type-style/_page-actualites.scss */
+#bloc_liste_rp p {
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 105, ../sass/content-type-style/_page-actualites.scss */
+.liste-revue-presse_defaut ul {
+  list-style: none;
+  width: 190px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+/* line 112, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp {
+  background: transparent url(../images/bg_actu_revuepresse.jpg) no-repeat;
+  margin: 0 auto;
+  width: 210px;
+}
+
+/* line 117, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp tbody {
+  background: none;
+  border: 0 none;
+}
+
+/* line 121, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp tr {
+  background: none;
+  border: 0 none;
+}
+
+/* line 125, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp td {
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 129, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp a {
+  padding: 2px;
+  text-decoration: none;
+  color: #656571;
+  font-weight: bold;
+}
+
+/* line 135, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp a:hover {
+  background: #D0D1D2;
+}
+
+/* line 138, ../sass/content-type-style/_page-actualites.scss */
+.table_liste_rp hr {
+  border-top: 1px solid #00ACD1;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*Bloc RSS*/
+/* line 144, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 {
+  background: #F29400 url(../images/bg_docs_ficheform.gif) no-repeat left top;
+  margin: 0 auto;
+  width: 200px;
+  padding: 20px 0;
+}
+
+/* line 150, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 h3 {
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+}
+
+/* line 155, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 a {
+  color: #606070;
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: square;
+  text-decoration: none;
+  padding: 2px;
+  text-indent: 2px;
+}
+
+/* line 164, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 a:hover {
+  background: #911381;
+  color: white;
+  text-indent: 5px;
+}
+
+/* line 169, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 ul li {
+  margin: 0;
+  list-style: none;
+}
+
+/* line 173, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 li {
+  list-style: none;
+}
+
+/* line 176, ../sass/content-type-style/_page-actualites.scss */
+#block-aggregator-feed-1 .filefield-icon {
+  display: none;
+}
+
+/* line 179, ../sass/content-type-style/_page-actualites.scss */
 #bloc_grawitz_actus, #bloc_autre_event {
   background-color: white;
   background-image: url(../images/bg_grawitz_actus_ht.jpg), url(../images/bg_grawitz_actus_bas.jpg);
@@ -4828,7 +5012,7 @@ body .conteneur .conteneur-flex #colonne-3.page-actualites {
   background-repeat: no-repeat;
   padding: 0.3125em 0;
 }
-/* line 42, ../sass/content-type-style/_page-actualites.scss */
+/* line 187, ../sass/content-type-style/_page-actualites.scss */
 #bloc_grawitz_actus h3, #bloc_autre_event h3 {
   color: #911381;
   font-family: "Arista", Trebuchet MS, sans-serif;
@@ -4837,35 +5021,35 @@ body .conteneur .conteneur-flex #colonne-3.page-actualites {
   font-size: x-large;
 }
 
-/* line 52, ../sass/content-type-style/_page-actualites.scss */
+/* line 197, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga, table.table_ae {
   margin: 0 0.3em;
   width: 100%;
 }
-/* line 55, ../sass/content-type-style/_page-actualites.scss */
+/* line 200, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga tbody, table.table_ae tbody {
   border: 0;
 }
-/* line 59, ../sass/content-type-style/_page-actualites.scss */
+/* line 204, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga td, table.table_ae td {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
   display: block;
   width: 90%;
 }
-/* line 65, ../sass/content-type-style/_page-actualites.scss */
+/* line 210, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga tr, table.table_ae tr {
   background: none repeat scroll 0 0 transparent;
   border: 0;
 }
-/* line 69, ../sass/content-type-style/_page-actualites.scss */
+/* line 214, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga a, table.table_ae a {
   text-decoration: none;
   color: #606070;
   padding: 0.3em;
   font-size: small;
 }
-/* line 74, ../sass/content-type-style/_page-actualites.scss */
+/* line 219, ../sass/content-type-style/_page-actualites.scss */
 table.table_ga a:hover, table.table_ae a:hover {
   background: #F29400;
   color: white;
@@ -5347,17 +5531,21 @@ table.table-docs-utiles-ficheform {
 table.table-docs-utiles-ficheform tr.even, table.table-docs-utiles-ficheform tr.odd {
   border: 0;
 }
-/* line 73, ../sass/content-type-style/_fiche-formation.scss */
+/* line 72, ../sass/content-type-style/_fiche-formation.scss */
+table.table-docs-utiles-ficheform tbody {
+  border: 0;
+}
+/* line 75, ../sass/content-type-style/_fiche-formation.scss */
 table.table-docs-utiles-ficheform tr {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
 }
-/* line 77, ../sass/content-type-style/_fiche-formation.scss */
+/* line 79, ../sass/content-type-style/_fiche-formation.scss */
 table.table-docs-utiles-ficheform td {
   border: 0;
 }
 
-/* line 82, ../sass/content-type-style/_fiche-formation.scss */
+/* line 84, ../sass/content-type-style/_fiche-formation.scss */
 .taxo_ficheform {
   background: #ADC91F;
   color: #606070;
@@ -5369,7 +5557,7 @@ table.table-docs-utiles-ficheform td {
 }
 
 /*Bloc 1 - Zone 1-2*/
-/* line 93, ../sass/content-type-style/_fiche-formation.scss */
+/* line 95, ../sass/content-type-style/_fiche-formation.scss */
 .deco-ficheform {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -5377,7 +5565,7 @@ table.table-docs-utiles-ficheform td {
   width: 95%;
   margin: 0 auto;
 }
-/* line 97, ../sass/content-type-style/_fiche-formation.scss */
+/* line 99, ../sass/content-type-style/_fiche-formation.scss */
 .deco-ficheform img {
   padding: 0.3%;
   margin: 2% 0;
@@ -5389,7 +5577,7 @@ table.table-docs-utiles-ficheform td {
   max-width: 100%;
 }
 
-/* line 107, ../sass/content-type-style/_fiche-formation.scss */
+/* line 109, ../sass/content-type-style/_fiche-formation.scss */
 h2.philo-ficheform {
   font-family: 'Josefin Slab',Trebuchet MS;
   font-size: larger;
@@ -5397,29 +5585,31 @@ h2.philo-ficheform {
   color: #F29400;
   font-style: italic;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 117, ../sass/content-type-style/_fiche-formation.scss */
+/* line 121, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation p, #colonne-3.fiche-formation p {
   padding: 0.3125em;
 }
-/* line 120, ../sass/content-type-style/_fiche-formation.scss */
+/* line 124, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation strong, #colonne-3.fiche-formation strong {
   color: #F29400;
 }
-/* line 123, ../sass/content-type-style/_fiche-formation.scss */
+/* line 127, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation a, #colonne-3.fiche-formation a {
   color: #F29400;
 }
-/* line 125, ../sass/content-type-style/_fiche-formation.scss */
+/* line 129, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation a:hover, #colonne-3.fiche-formation a:hover {
   text-decoration: none;
 }
-/* line 130, ../sass/content-type-style/_fiche-formation.scss */
+/* line 134, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation h2, #colonne-3.fiche-formation h2 {
   color: #DE603A;
 }
-/* line 133, ../sass/content-type-style/_fiche-formation.scss */
+/* line 137, ../sass/content-type-style/_fiche-formation.scss */
 #colonne-2.fiche-formation h3, #colonne-3.fiche-formation h3 {
   color: #01ABCF;
 }

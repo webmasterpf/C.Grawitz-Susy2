@@ -11,11 +11,11 @@
          * .col2_layout_200_590_200{} .col2_layout_330_all{} .col2_layout_18_56_25{}
          * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
          */?>
-      <div id="col_G1" class="page_vdl_content_col_G1">
+      <div id="colonne-1" class="col1_layout_3_6_3 page-liste-vdl">
            
            <?php 
            global $theme_path;
-              include ($theme_path.'/includes/inc_vue_grawitz_actus.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_vue_grawitz_actus.php');
               ?>
              <?php
            global $theme_path;
@@ -24,7 +24,7 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-         <div id="col_G2" class="page_vdl_content_col_G2">
+         <div id="colonne-2" class="col2_layout_3_6_3 page-liste-vdl">
 
               <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page_vdl"><?php print $title; ?></h1>
@@ -41,7 +41,7 @@
 
                  <?php
            global $theme_path;
-              include ($theme_path.'/includes/inc_liste_vdl.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_liste_vdl.php');
               ?>
 
                     <?php
@@ -54,11 +54,8 @@
         </div>
 
         <!--______________COLONNE 3________________ -->
-      <div id="col_G3" class="page_vdl_content_col_G3">
-         
-
-
-
+      <div id="colonne-3" class="col3_layout_3_6_3 page-liste-vdl">
+   
     <?php
            global $theme_path;
               include ($theme_path.'/includes/regions_inc/inc_region_col_3.php');

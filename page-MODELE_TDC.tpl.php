@@ -1,20 +1,12 @@
+<!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
 <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_header.php');
 ?>
- <!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
-  <!-- ______________________ CONTENU _______________________ -->
+ <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
 
-      <div class="content-global">
-
-         
-
-       <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
-
-
-       <div class="content-inner" class="page-MODELE">
-           
-            <!-- ______________________ CONTENT TOP _______________________ -->
+        <div class="content-inner">
+              <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top): ?>
             <div id="content-top">
 	<span class="ariane"> <?php print $breadcrumb; ?></span>
@@ -48,11 +40,11 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div class="middle-content page-MODELE">
+             <article class="middle-content">
 
             <?php print $content; ?>
               <?php print $feed_icons; ?>
-          </div> <!-- /#middle-content -->
+                  </article> <!-- /#content-area -->
 
       </div> <!-- /content-inner /content -->
 
@@ -64,15 +56,14 @@ include ($theme_path.'/includes/inc_header.php');
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-    	 
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
             <div class="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /content-global -->
+	
 <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_footer.php');
-?>     
+?>          
