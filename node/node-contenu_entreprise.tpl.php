@@ -86,13 +86,6 @@
               ?>
 
 
-            <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
-            <?php if ($node->nom_du_champ[0]['view']): ?>
-            <div id="nom-css">
-                    <?php  print $node->nom_du_champ[0]['view']  ?>
-            </div>
-            <?php endif;?>
-
              <?php
            global $theme_path;
               include ($theme_path.'/includes/regions_inc/inc_region_col_3.php');
