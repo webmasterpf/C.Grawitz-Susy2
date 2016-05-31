@@ -40,7 +40,7 @@ cape = contenu asso parent eleves
 centreprise = contenu lycée-entreprise
 */
 h1.titre_page_vdl{
-    font-size: em(24px);
+    font-size: x-large;
     color: $orange;
     line-height: 1.0em;
 }
@@ -91,8 +91,7 @@ h1.titre_page_vdl{
     float: right;
     img{
     margin: 3px;
-    @include arrondis;
-    @include ombrage;
+    @include cadre-ombre (0.2,white);
 }
 }
 
@@ -112,10 +111,7 @@ h1.titre_page_vdl{
     margin: em(5px);
 }
 }
-#galerie-vdl 
+
 .view-Diapo-vie-du-lycee img{
-    border: 5px solid #fff;
-    -moz-box-shadow: #AAAAAA 0px 0px 2px ;
-    -webkit-box-shadow: #AAAAAA 0px 0px 2px;
-    box-shadow: #AAAAAA 0px 0px 2px;
+        @include cadre-ombre (0.2,white);
 }

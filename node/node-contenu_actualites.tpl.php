@@ -3,12 +3,12 @@
   <div class="node-inner">
 <!--______________COLONNE GAUCHE 1________________ -->
   <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-<div  class="actualites_content_G1">
+<div id="colonne-1" class="col1_layout_max contenu-actu">
 
 
        <?php
            global $theme_path;
-              include ($theme_path.'/includes/inc_actu_complement.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_actu_complement.php');
               ?>
 
 
@@ -21,7 +21,7 @@
 </div>
 <br/>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="colonne-2" class="actualites_content_G2">
+<div id="colonne-2" class="col1_layout_6_6 contenu-actu">
          <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_actualites_content"><?php print $title; ?></h1>
      <br clear="all"/>
@@ -45,10 +45,6 @@
         </div>
            <?php endif;?>
 
-
-
-
-
        <?php
            global $theme_path;
               include ($theme_path.'/includes/regions_inc/inc_region_col_2.php');
@@ -58,10 +54,8 @@
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="colonne-3" class="actualites_content_G3">
-     <?php print $picture; ?>
-
-   
+<div id="colonne-3" class="col2_layout_6_6 contenu-actu">
+      
 
     <div class="content">
  <?php
@@ -69,9 +63,6 @@
       print $node->content['body']['#value'];
 
       ?>
-       
-
-         
 
           <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
         <div id="bloc-galerie-vdl">

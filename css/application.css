@@ -729,11 +729,12 @@ h6, .h6 {
 /* line 119, ../sass/global/_typos.scss */
 .conteneur #footer p {
   margin-bottom: 1.5em;
-  font-size: small;
+  font-size: x-small;
   padding: 0.3em;
+  line-height: 1.4em;
 }
 
-/* line 126, ../sass/global/_typos.scss */
+/* line 128, ../sass/global/_typos.scss */
 .HPBasGauche p, .HPBasDroit p {
   font-size: 0.75em;
   line-height: 2em;
@@ -805,7 +806,7 @@ h6, .h6 {
   }
   /* line 41, ../sass/global/_style.scss */
   .ariane .breadcrumb span.menu-item-container {
-    color: #DE603A;
+    color: #606070;
     text-decoration: none;
     font-size: small;
     display: initial;
@@ -5113,120 +5114,73 @@ body .conteneur .conteneur-flex #colonne-3.contenu-actu {
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px) {
   /* line 25, ../sass/content-type-style/_contenu-actualite.scss */
-  body .conteneur .conteneur-flex #colonne-2.contenu-actu {
-    border-left: 0.0625em solid #ADC91F;
-    border-right: 0.0625em solid #911381;
+  body .conteneur #colonne-3.contenu-actu {
+    border-left: 0.0625em solid #606070;
   }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
 /* line 33, ../sass/content-type-style/_contenu-actualite.scss */
-#colonne-1.contenu-actu h3 {
-  text-align: center;
-  color: #ADC91F;
-  font-family: arista,Trebuchet MS, sans-serif;
-  font-size: larger;
-  margin: 0.3125em;
+h1.titre_actualites_content {
+  color: #F29400;
+  font-family: 'Arvo',Trebuchet MS,sans-serif;
 }
 
+/* line 38, ../sass/content-type-style/_contenu-actualite.scss */
+#colonne-1.contenu-actu h3.docs-actualites {
+  color: #ADC91F;
+  text-align: center;
+}
 /* line 42, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus {
-  margin: 0 auto;
-  width: 10.625em;
-  background: transparent url("../images/bg_infos_plus_vdl.jpg") no-repeat left 0px;
-  /*25px*/
+#colonne-1.contenu-actu #bloc-docs-actualites {
+  width: 100%;
+  background: #ECECED;
+  padding: 0.625em;
 }
 /* line 46, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus tbody {
-  border: 0;
-}
-/* line 49, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus h3 {
-  font-family: arista,Trebuchet MS, sans-serif;
-  text-align: center;
-  color: #01ABCF;
-  font-size: 1.5em;
-  margin: 5px 0;
-}
-/* line 56, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus tr {
-  background: transparent url("//../images/sep_infos_plus_vdl.jpg") no-repeat bottom 20px;
-}
-/* line 60, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus td {
-  padding: 3px 0 6px 10px;
-  text-align: center;
-}
-/* line 64, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus hr {
-  border-bottom: 1px solid #01ABCF;
-  width: 120px;
-  margin: 0 auto;
-}
-/* line 69, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus a {
-  color: #01ABCF;
+#colonne-1.contenu-actu #bloc-docs-actualites a {
   text-decoration: none;
-  text-align: center;
+  color: #01ABCF;
+  padding: 4px;
 }
-/* line 73, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus a:hover {
-  text-decoration: underline;
-}
-/* line 77, ../sass/content-type-style/_contenu-actualite.scss */
-#table_infos_plus .filefield-icon {
-  display: none;
-}
-
-/* line 82, ../sass/content-type-style/_contenu-actualite.scss */
-#colonne-2.contenu-actu p {
-  padding: 0.2em;
-}
-/* line 85, ../sass/content-type-style/_contenu-actualite.scss */
-#colonne-2.contenu-actu h1 {
-  color: #911381;
-  font-size: larger;
-  line-height: normal;
-  margin: 0;
-}
-
-/*---- Galerie images au choix -------*/
-/* line 93, ../sass/content-type-style/_contenu-actualite.scss */
-#bloc-galerie-vdl {
-  margin: 0;
-  padding: 0;
-}
-/* line 97, ../sass/content-type-style/_contenu-actualite.scss */
-#bloc-galerie-vdl h3 {
-  text-align: center;
-  font-family: "Arista", Trebuchet MS, sans-serif;
-  font-size: 2.0em;
-  margin: 0.3125em;
-  color: #911381;
-}
-/* line 105, ../sass/content-type-style/_contenu-actualite.scss */
-#bloc-galerie-vdl a {
-  background: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-/* line 111, ../sass/content-type-style/_contenu-actualite.scss */
-#bloc-galerie-vdl .overlay-inner p {
+/* line 50, ../sass/content-type-style/_contenu-actualite.scss */
+#colonne-1.contenu-actu #bloc-docs-actualites a:hover {
+  background: #01ABCF;
   color: white;
 }
-/* line 114, ../sass/content-type-style/_contenu-actualite.scss */
-#bloc-galerie-vdl .vignettes-zoom a, #bloc-galerie-vdl .vignettes-zoom a:hover {
-  background: 0;
-  text-decoration: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: none;
+
+/* line 59, ../sass/content-type-style/_contenu-actualite.scss */
+#bloc-video-actualites {
+  width: 89%;
+  display: block;
+  border: 0.1em solid #F29400;
+  margin: 0 auto;
+  padding: 0.125em;
 }
-/* line 121, ../sass/content-type-style/_contenu-actualite.scss */
-#bloc-galerie-vdl .vignettes-zoom a img, #bloc-galerie-vdl .vignettes-zoom a:hover img {
-  border: 3px solid #ADC91F;
+
+/* line 71, ../sass/content-type-style/_contenu-actualite.scss */
+#table-docs-actualites tbody {
+  border: 0;
+}
+/* line 74, ../sass/content-type-style/_contenu-actualite.scss */
+#table-docs-actualites tr {
+  border: 0 none;
+}
+/* line 77, ../sass/content-type-style/_contenu-actualite.scss */
+#table-docs-actualites td {
+  display: inline-block;
+  margin: 0 3.125em;
+}
+
+/* line 88, ../sass/content-type-style/_contenu-actualite.scss */
+#colonne-3.contenu-actu a {
+  color: #DE603A;
+  text-decoration: none;
+}
+/* line 90, ../sass/content-type-style/_contenu-actualite.scss */
+#colonne-3.contenu-actu a:hover {
+  background: #DE603A;
+  color: #ECECED;
 }
 
 /*-------------------------------------|
@@ -5266,7 +5220,7 @@ centreprise = contenu lycée-entreprise
 */
 /* line 42, ../sass/content-type-style/_contenu-vdl.scss */
 h1.titre_page_vdl {
-  font-size: 1.5em;
+  font-size: x-large;
   color: #F29400;
   line-height: 1.0em;
 }
@@ -5324,16 +5278,13 @@ h1.titre_page_vdl {
 /* line 92, ../sass/content-type-style/_contenu-vdl.scss */
 .illustration-vdl img {
   margin: 3px;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  border: 0.5em solid #fff;
-  -moz-box-shadow: 0.5em 0.5em 0.3em #aaa;
-  -webkit-box-shadow: 0.5em 0.5em 0.3em #aaa;
-  box-shadow: 0.5em 0.5em 0.3em #aaa;
+  border: 0.2 solid white;
+  -moz-box-shadow: #AAAAAA 0px 0px 5px;
+  -webkit-box-shadow: #AAAAAA 0px 0px 5px;
+  box-shadow: #AAAAAA 0px 0px 5px;
 }
 
-/* line 99, ../sass/content-type-style/_contenu-vdl.scss */
+/* line 98, ../sass/content-type-style/_contenu-vdl.scss */
 #video-vdl {
   width: 425px;
   margin: 0 auto;
@@ -5341,12 +5292,12 @@ h1.titre_page_vdl {
   border: 0.3em solid #911381;
 }
 
-/* line 105, ../sass/content-type-style/_contenu-vdl.scss */
+/* line 104, ../sass/content-type-style/_contenu-vdl.scss */
 .galerie-vdl {
   margin: 11em 0;
   padding: 0.3125em 0;
 }
-/* line 108, ../sass/content-type-style/_contenu-vdl.scss */
+/* line 107, ../sass/content-type-style/_contenu-vdl.scss */
 .galerie-vdl h3 {
   text-align: center;
   color: #911381;
@@ -5355,12 +5306,11 @@ h1.titre_page_vdl {
 }
 
 /* line 115, ../sass/content-type-style/_contenu-vdl.scss */
-#galerie-vdl
 .view-Diapo-vie-du-lycee img {
-  border: 5px solid #fff;
-  -moz-box-shadow: #AAAAAA 0px 0px 2px;
-  -webkit-box-shadow: #AAAAAA 0px 0px 2px;
-  box-shadow: #AAAAAA 0px 0px 2px;
+  border: 0.2 solid white;
+  -moz-box-shadow: #AAAAAA 0px 0px 5px;
+  -webkit-box-shadow: #AAAAAA 0px 0px 5px;
+  box-shadow: #AAAAAA 0px 0px 5px;
 }
 
 /*-------------------------------------|

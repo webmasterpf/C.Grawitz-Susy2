@@ -20,7 +20,7 @@
 
                   <?php
            global $theme_path;
-              include ($theme_path.'/includes/inc_vdl_infos_utiles.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_vdl_infos_utiles.php');
               ?>
 
 

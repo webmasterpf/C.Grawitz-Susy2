@@ -13,14 +13,14 @@
          * <div id="colonne-1" class="CHOIX_DU_LAYOUT">
          */?>
 
-            <div id="colonne-1" class="cp_content_col_G1">
+            <div id="colonne-1" class="col1_layout_3_6_3 contenu-vdl cp">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page"><?php print $title; ?></h1>
+            <h1 class="titre_page_vdl"><?php print $title; ?></h1>
             <?php endif; ?>
 
                   <?php
            global $theme_path;
-              include ($theme_path.'/includes/inc_vdl_infos_utiles.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_vdl_infos_utiles.php');
               ?>
 
 
@@ -31,7 +31,7 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); //listage des variables du $content  ?> </pre>-->
-        <div id="colonne-2" class="cp_content_col_G2">
+        <div id="colonne-2" class="col2_layout_3_6_3 contenu-vdl cp">
 
             <?php print $picture; ?>
 
@@ -42,7 +42,7 @@
             <div class="content">
                 
                   <?php if ($node->field_illustration_vdl[0]['view']): ?>
-            <div id="illustration-vdl">
+            <div class="illustration-vdl">
                     <?php  print $node->field_illustration_vdl[0]['view']  ?>
             </div>
             <?php endif;?>
@@ -51,13 +51,13 @@
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
 
                    <?php if ($node->field_video_vdl[0]['view']): ?>
-            <div id="video-vdl">
+            <div class="video-vdl">
                     <?php  print $node->field_video_vdl[0]['view']  ?>
             </div>
             <?php endif;?>
 
                    <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
-            <div id="galerie-vdl">
+            <div class="galerie-vdl">
                     <?php  print $node->field_choix_galerie_vdl[0]['view']  ?>
             </div>
             <?php endif;?>
@@ -72,21 +72,15 @@
         </div>
 
         <!--______________COLONNE 3________________ -->
-        <div id="colonne-3" class="cp_content_col_G3">
+        <div id="colonne-3" class="col3_layout_3_6_3 contenu-vdl cp">
 
-
+        
              <?php
            global $theme_path;
-              include ($theme_path.'/includes/inc_vue_autre_event.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_vue_autre_event.php');
               ?>
 
-
-            <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
-            <?php if ($node->nom_du_champ[0]['view']): ?>
-            <div id="nom-css">
-                    <?php  print $node->nom_du_champ[0]['view']  ?>
-            </div>
-            <?php endif;?>
+        
 
              <?php
            global $theme_path;
