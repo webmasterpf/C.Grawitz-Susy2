@@ -5234,34 +5234,133 @@ body .conteneur .conteneur-flex #colonne-3.contenu-actu {
 |           CONTENU VDL                |
 |--------------------------------------*/
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
-/* line 16, ../sass/content-type-style/_contenu-vdl.scss */
-body .conteneur #colonne-1.partenaires {
+/* line 17, ../sass/content-type-style/_contenu-vdl.scss */
+body .conteneur #colonne-1.contenu-vdl {
   order: 1;
 }
-/* line 17, ../sass/content-type-style/_contenu-vdl.scss */
-body .conteneur #colonne-2.partenaires {
+/* line 18, ../sass/content-type-style/_contenu-vdl.scss */
+body .conteneur #colonne-2.contenu-vdl {
   order: 2;
 }
-/* line 18, ../sass/content-type-style/_contenu-vdl.scss */
-body .conteneur #colonne-3.partenaires {
+/* line 19, ../sass/content-type-style/_contenu-vdl.scss */
+body .conteneur #colonne-3.contenu-vdl {
   order: 3;
 }
 
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px) {
-  /* line 27, ../sass/content-type-style/_contenu-vdl.scss */
+  /* line 28, ../sass/content-type-style/_contenu-vdl.scss */
   body .conteneur #colonne-2.contenu-vdl {
-    border-left: 0.0625em solid #ADC91F;
-    border-right: 0.0625em solid #911381;
+    border-left: 0.0625em solid #911381;
+    border-right: 0.0625em solid #F29400;
   }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
-/* line 34, ../sass/content-type-style/_contenu-vdl.scss */
+/*csa = contenu sortie action
+cp = contenu projet
+cint = contenu intervenant
+cinn = contenu innovation
+cape = contenu asso parent eleves
+centreprise = contenu lycée-entreprise
+*/
+/* line 42, ../sass/content-type-style/_contenu-vdl.scss */
 h1.titre_page_vdl {
   font-size: 1.5em;
   color: #F29400;
   line-height: 1.0em;
+}
+
+/* line 48, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl p, .contenu-vdl ul {
+  padding: 0.3125em;
+  margin: 0;
+}
+/* line 52, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl h3 {
+  color: #01ABCF;
+  padding: 0.125em;
+}
+/* line 56, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl h2 {
+  text-align: center;
+  color: #01ABCF;
+}
+/* line 60, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl h4 {
+  color: #911381;
+  padding: 0.125em;
+  text-indent: 0.1875em;
+}
+/* line 65, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl a {
+  color: #01ABCF;
+  text-decoration: none;
+  padding: 0.125em;
+  text-indent: 0.1875em;
+}
+/* line 70, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl a:hover {
+  color: white;
+  background: #01ABCF;
+}
+
+/* line 80, ../sass/content-type-style/_contenu-vdl.scss */
+#colonne-2.cape a, #colonne-2.cinn a, #colonne-2.cint a, #colonne-2.csa a, #colonne-2.cp a {
+  color: #F29400;
+  text-decoration: none;
+  padding: 0.125em;
+}
+/* line 84, ../sass/content-type-style/_contenu-vdl.scss */
+#colonne-2.cape a:hover, #colonne-2.cinn a:hover, #colonne-2.cint a:hover, #colonne-2.csa a:hover, #colonne-2.cp a:hover {
+  color: white;
+  background: #F29400;
+}
+
+/* line 90, ../sass/content-type-style/_contenu-vdl.scss */
+.illustration-vdl {
+  float: right;
+}
+/* line 92, ../sass/content-type-style/_contenu-vdl.scss */
+.illustration-vdl img {
+  margin: 3px;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  border: 0.5em solid #fff;
+  -moz-box-shadow: 0.5em 0.5em 0.3em #aaa;
+  -webkit-box-shadow: 0.5em 0.5em 0.3em #aaa;
+  box-shadow: 0.5em 0.5em 0.3em #aaa;
+}
+
+/* line 99, ../sass/content-type-style/_contenu-vdl.scss */
+#video-vdl {
+  width: 425px;
+  margin: 0 auto;
+  padding: 2px;
+  border: 0.3em solid #911381;
+}
+
+/* line 105, ../sass/content-type-style/_contenu-vdl.scss */
+.galerie-vdl {
+  margin: 11em 0;
+  padding: 0.3125em 0;
+}
+/* line 108, ../sass/content-type-style/_contenu-vdl.scss */
+.galerie-vdl h3 {
+  text-align: center;
+  color: #911381;
+  font-size: medium;
+  margin: 0.3125em;
+}
+
+/* line 115, ../sass/content-type-style/_contenu-vdl.scss */
+#galerie-vdl
+.view-Diapo-vie-du-lycee img {
+  border: 5px solid #fff;
+  -moz-box-shadow: #AAAAAA 0px 0px 2px;
+  -webkit-box-shadow: #AAAAAA 0px 0px 2px;
+  box-shadow: #AAAAAA 0px 0px 2px;
 }
 
 /*-------------------------------------|

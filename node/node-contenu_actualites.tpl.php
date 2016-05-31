@@ -21,7 +21,7 @@
 </div>
 <br/>
 <!--______________COLONNE GAUCHE 2________________ -->
-<div id="col_G2" class="actualites_content_G2">
+<div id="colonne-2" class="actualites_content_G2">
          <?php if ($title): /*insertion du titre de la page et style differencié*/?>
      <h1 class="titre_actualites_content"><?php print $title; ?></h1>
      <br clear="all"/>
@@ -58,7 +58,7 @@
 </div>
 <!--______________COLONNE GAUCHE 3________________ -->
    
-<div id="col_G3" class="actualites_content_G3">
+<div id="colonne-3" class="actualites_content_G3">
      <?php print $picture; ?>
 
    

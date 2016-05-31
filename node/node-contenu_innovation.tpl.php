@@ -13,7 +13,7 @@
          * <div id="colonne-1" class="CHOIX_DU_LAYOUT">
          */?>
 
-            <div id="col_G1" class="cinn_content_col_G1">
+            <div id="colonne-1" class="cinn_content_col_G1">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
@@ -31,7 +31,7 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); //listage des variables du $content  ?> </pre>-->
-        <div id="col_G2" class="cinn_content_col_G2">
+        <div id="colonne-2" class="cinn_content_col_G2">
 
             <?php print $picture; ?>
 
@@ -72,7 +72,7 @@
         </div>
 
         <!--______________COLONNE 3________________ -->
-        <div id="col_G3" class="cinn_content_col_G3">
+        <div id="colonne-3" class="cinn_content_col_G3">
 
 
              <?php

@@ -1,5 +1,6 @@
 // Regroupe le style pour le contenu des node.tpl custom
-// Concerne toutes les pages qui créer du contenu Europe, Sortie, Partenaires
+// Concerne toutes les pages qui créer du contenu :
+// Sortie, Projet, APE, Entreprise, Innonvations, Intervenant
 
 /*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
@@ -13,9 +14,9 @@
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur {
 
-    #colonne-1.partenaires{order:1;}
-    #colonne-2.partenaires{order:2;}
-    #colonne-3.partenaires{order:3;}
+    #colonne-1.contenu-vdl{order:1;}
+    #colonne-2.contenu-vdl{order:2;}
+    #colonne-3.contenu-vdl{order:3;}
     @include breakpoint ($desktop){
    
     }
@@ -25,14 +26,96 @@ body .conteneur {
 body .conteneur {
     @include breakpoint ($desktop){
         #colonne-2.contenu-vdl{
-            @include border-vert-violet;
+            @include border-violet-orange;
         }
         }
     
 }
 /*######-------- ||| STYLE ||| --------######*/
+/*csa = contenu sortie action
+cp = contenu projet
+cint = contenu intervenant
+cinn = contenu innovation
+cape = contenu asso parent eleves
+centreprise = contenu lycée-entreprise
+*/
 h1.titre_page_vdl{
     font-size: em(24px);
     color: $orange;
     line-height: 1.0em;
+}
+.contenu-vdl {
+    p, ul{
+        padding: em(5px);
+        margin: 0;
+    }
+    h3{
+        color: $bleu-turquoise;
+        padding: em(2px);
+    }
+    h2{
+        text-align: center;
+        color: $bleu-turquoise;
+    }
+    h4{
+        color: $violet;
+        padding: em(2px);
+        text-indent: em(3px);
+    }
+    a{
+        color: $bleu-turquoise;
+        text-decoration: none;
+        padding: em(2px);
+        text-indent: em(3px);
+        &:hover{
+            color: white;
+            background: $bleu-turquoise;
+        }
+    }
+
+
+}
+     
+#colonne-2.cape,#colonne-2.cinn,#colonne-2.cint,#colonne-2.csa,#colonne-2.cp{
+    a{
+        color: $orange;
+        text-decoration: none;
+        padding: em(2px);
+        &:hover{
+            color: white;
+            background: $orange;
+        }
+    }
+}
+.illustration-vdl{
+    float: right;
+    img{
+    margin: 3px;
+    @include arrondis;
+    @include ombrage;
+}
+}
+
+#video-vdl{
+    width: 425px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 0.3em solid $violet;
+}
+.galerie-vdl{
+    margin: 11em 0;
+    padding: em(5px) 0;
+    h3{
+    text-align: center;
+    color: $violet;
+    font-size: medium;
+    margin: em(5px);
+}
+}
+#galerie-vdl 
+.view-Diapo-vie-du-lycee img{
+    border: 5px solid #fff;
+    -moz-box-shadow: #AAAAAA 0px 0px 2px ;
+    -webkit-box-shadow: #AAAAAA 0px 0px 2px;
+    box-shadow: #AAAAAA 0px 0px 2px;
 }

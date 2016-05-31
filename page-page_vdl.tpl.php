@@ -1,4 +1,4 @@
- <!-- ______________________ LAYOUT PAGE page_vdl OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+       <!-- ______________________ PAGE VDL Liste TPL _______________________ -->
 <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_header.php');
