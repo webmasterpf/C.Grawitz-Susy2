@@ -96,20 +96,22 @@ h1.titre_page_vdl{
 }
 
 #video-vdl{
-    width: 425px;
+    width: 89%;
+    display: block;
     margin: 0 auto;
-    padding: 2px;
+    padding: em(2px);
     border: 0.3em solid $violet;
 }
-.galerie-vdl{
+#colonne-2 .galerie-vdl{
     margin: 11em 0;
     padding: em(5px) 0;
     h3{
-    text-align: center;
-    color: $violet;
-    font-size: medium;
-    margin: em(5px);
-}
+        text-align: center;
+        color: $violet;
+        font-size: medium;
+        margin: em(5px);
+    }
+    
 }
 
 .view-Diapo-vie-du-lycee img{

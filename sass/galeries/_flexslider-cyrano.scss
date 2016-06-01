@@ -7,7 +7,8 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 
-.vdl-galerie-image,.galerie-resto{
+//indiquer la classe qui gère flexslider
+#colonne-2 .galerie-vdl{
     .flexslider{
         background : transparent;
         border: 0;
@@ -20,11 +21,11 @@ Indiquer les classes ou les IDs des enveloppes des galeries
                 background: $violet;//couleur defaut
                 @include ombrage(0.1em,0.1em,0.1em);
                 &:hover{
-                    background: $bleu-turquoise;
+                    background: $orange;
                 }
             }
             li a.flex-active  {
-                background: $bleu-turquoise;//couleur image active
+                background: $orange;//couleur image active
             }
         }
 
