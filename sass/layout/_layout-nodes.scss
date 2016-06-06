@@ -299,8 +299,26 @@ body .conteneur{
         }
     }
   
-  .col1_layout_2_10{}
-  .col2_layout_2_10{}
+    .col1_layout_2_10{
+           @include breakpoint ($tablet){
+            @include span(first 2 of $tabletcol);
+           
+        }
+        @include breakpoint ($desktop){
+            @include span(first 2 of $desktopcol);
+           
+        }
+    }
+    .col2_layout_2_10{
+         @include breakpoint ($tablet){
+            @include span(last 7 of $tabletcol);
+         
+        }
+        @include breakpoint ($desktop){
+           @include span(last 10 of $desktopcol);
+         
+        }
+    }
   
   .col1_layout_5_7{}
   .col2_layout_5_7{}

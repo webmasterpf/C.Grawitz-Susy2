@@ -2,28 +2,23 @@
 /* Ce template permet la création d'un layout multicolonne pour les pages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
-<!--______________NODE TPL POUR PAGE.TPL CUSTOM________________ -->
+<!--______________NODE TPL POUR PAGE ERREUR.TPL CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
-        <div id="colonne-1" class="CHOIX_DU_LAYOUT">
+        <div id="colonne-1" class="col1_layout_2_10 page-erreur">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page"><?php print $title; ?></h1>
+            <h1 class="titre_page-erreur"><?php print $title; ?></h1>
             <?php endif; ?>
         
-            <?php 
-  $theme_path = drupal_get_path('theme', 'NOM_THEME');
-include($theme_path .'/includes/regions_inc/inc_region_col_1.php');
-?>
-            
-                 <?php
+      <?php
            global $theme_path;
               include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
               ?>
         </div><!-- /colonne1 -->
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="CHOIX_DU_LAYOUT">
+        <div id="colonne-2" class="col2_layout_2_10 page-erreur">
 
             <?php print $picture; ?>
 
@@ -37,17 +32,6 @@ include($theme_path .'/includes/regions_inc/inc_region_col_1.php');
 
         </div><!-- /colonne2 -->
 
-        <!--______________COLONNE 3________________ -->
-        <div id="colonne-3" class="CHOIX_DU_LAYOUT">
-            <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
-            <?php if ($node->nom_du_champ[0]['view']): ?>
-            <div id="nom-css">
-                    <?php  print $node->nom_du_champ[0]['view']  ?>
-            </div>
-            <?php endif;?>
-
-
-        </div><!-- /colonne3 -->
 
         <?php if ($terms): ?>
         <div class="taxonomy"><?php //print $terms; ?></div>
