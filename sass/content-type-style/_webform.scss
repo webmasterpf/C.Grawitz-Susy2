@@ -22,10 +22,10 @@ body .conteneur .conteneur-flex{
 /*######-------- ||| BORDURES ||| --------######*/
 body .conteneur {
     @include breakpoint ($desktop){
-        #colonne-1.contact{
-            @include border-R-violet;
+        #colonne-2.webform{
+            @include border-orange-violet;
         }
-    }
+        }
     
 }
 /*######-------- ||| STYLE ||| --------######*/

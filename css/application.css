@@ -4304,8 +4304,8 @@ body .conteneur #colonne-3.vdl-liste {
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px) {
   /* line 26, ../sass/content-type-style/_page-vdl-liste.scss */
-  body .conteneur #colonne-2.contenu-vdl {
-    border-left: 0.0625em solid #ADC91F;
+  body .conteneur #colonne-2.contenu-vdl, body .conteneur #colonne-2.page-liste-vdl {
+    border-left: 0.0625em solid #F29400;
     border-right: 0.0625em solid #911381;
   }
 }
@@ -5439,7 +5439,8 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 /*######-------- ||| BORDURES ||| --------######*/
 @media (min-width: 990px) {
   /* line 25, ../sass/content-type-style/_webform.scss */
-  body .conteneur #colonne-1.contact {
+  body .conteneur #colonne-2.webform {
+    border-left: 0.0625em solid #F29400;
     border-right: 0.0625em solid #911381;
   }
 }

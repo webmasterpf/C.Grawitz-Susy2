@@ -23,8 +23,8 @@ body .conteneur {
 /*######-------- ||| BORDURES ||| --------######*/
 body .conteneur {
     @include breakpoint ($desktop){
-        #colonne-2.contenu-vdl{
-            @include border-vert-violet;
+        #colonne-2.contenu-vdl,#colonne-2.page-liste-vdl{
+            @include border-orange-violet;
         }
         }
     
