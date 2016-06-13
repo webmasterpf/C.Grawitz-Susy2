@@ -43,27 +43,7 @@ body .conteneur {
     .HPBasDroit{@include span(last $tabletcol/2 of $tabletcol);}
 
 }
-//Pour le dev, code visuel sur les blocs selon le breakpoint
-// à commenter ou supprimer pour la production
-body .conteneur {
-        
-    .HPDiapo{}
-    .HPBasGauche{background: #C8D215;}
-    .HPBasDroit{background: salmon;}
-   
-    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
-        
-    .HPDiapo{}
-    .HPBasGauche{background:gold;}
-    .HPBasDroit{background:bisque;}
-    }
-   
-    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
-        .HPDiapo{}
-        .HPBasGauche{background: #C8D215;}
-        .HPBasDroit{background: red;}
-    }
-}
+
 /********************/
 /*ZONES PAGE ACCUEIL*/
 
