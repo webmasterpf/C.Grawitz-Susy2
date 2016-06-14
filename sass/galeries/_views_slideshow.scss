@@ -113,9 +113,11 @@ VIEWS 3 CYCLE ===================================
   text-indent: em(-9999px);
   cursor: pointer;
 }
-.widget_pager .active,.widget_pager :hover{
-    background-color: $violet;
-    @include arrondis (em(6px));
+.widget_pager .active,.widget_pager,.views-content-title{
+    &:hover, a:hover,&:active,a:active{
+        background-color: $violet;
+        @include arrondis (em(6px));
+    }
 }
 /*
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
