@@ -18,10 +18,13 @@ aside.content_top{
     display: block;
     max-width: 100%;
     margin: 0 auto;
+    .views_slideshow_cycle_teaser_section,.views_slideshow_cycle_slide, .views_slideshow_slide{
+        margin: 0 auto;
+        width: 100%;//pleine largeur pour tous les items
+        max-width: 100%;
+    }
 }
-.views_slideshow_cycle_teaser_section{
-     margin: 0 auto;
-}
+
 /* Defilant RWD*/
 aside.annonce-container{
     display: block;
@@ -36,39 +39,43 @@ aside.annonce-container{
 aside.annonce-container .annonce,
 aside .annonce-container .annonce
 {
-// max-width: container();
- 
-  color: $color-defilant;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  @include adjust-font-size-to(16px);
-  a {
-    color: $color-defilant-a;
-    text-decoration: none;
+    // max-width: container();
+
+    color: $color-defilant;
     font-weight: bold;
-    text-transform:capitalize;
-    &:hover {
-      text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    @include adjust-font-size-to(16px);
+    a {
+        color: $color-defilant-a;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform:capitalize;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
-  p, h2, h2 a{
-      margin: 0;
-      padding: 0;
-  }
-  p{
-      font-size: large;
-  }
-  img{
-      @include adaptable-img;
-  }
-  @include breakpoint ($tablet){
-     max-width: container($tabletcol);
-  }
-  @include breakpoint ($desktop){
-      max-width: container($desktopcol);
-  }
-  
+    p, h2, h2 a{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        font-size: large;
+    }
+    img{
+        @include adaptable-img;
+    }
+    @include breakpoint ($tablet){
+        max-width: container($tabletcol);
+    }
+    @include breakpoint ($desktop){
+        max-width: container($desktopcol);
+       .views_slideshow_cycle_teaser_section,.views_slideshow_cycle_teaser_section,
+       .views_slideshow_cycle_slide, .views_slideshow_slide{
+            width: 100%;//pleine largeur pour tous les items
+        }
+    }
+
 }
 /*DEFILANT CLASSIQUE*/
 //#block-views-liste_annonce_accueil-block_1{display: block;margin: 5px 0;height: 50px;}
