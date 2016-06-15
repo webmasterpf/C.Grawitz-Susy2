@@ -127,8 +127,9 @@ Voir "../layout/_layout-defilant.scss";
 VIEWS 3 CYCLE: DIAPO CONTENU ===================================
 */
 .galerie .views_slideshow_cycle_slide img{
-    border: 0.2em #D63E2A solid;padding: 0.2em;display: block;
+    border: 0.2em $rouge solid;padding: 0.2em;display: block;
 left: 8em;position: relative;
+@include adaptable-img;
 }
 .galerie .views_slideshow_controls_text_previous a,.galerie .views_slideshow_controls_text_next a{
     width: 4.4em;height: 4.4em; overflow: hidden;text-indent: 5em;position: relative;
