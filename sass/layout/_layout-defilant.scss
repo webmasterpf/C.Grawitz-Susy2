@@ -22,6 +22,17 @@ aside.content_top{
 .views_slideshow_cycle_teaser_section{
      margin: 0 auto;
 }
+/* Defilant RWD*/
+aside.annonce-container{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    .views_slideshow_cycle_main,div.annonce{
+        max-width: 100%;
+    }
+}
+
+
 aside.annonce-container .annonce,
 aside .annonce-container .annonce
 {

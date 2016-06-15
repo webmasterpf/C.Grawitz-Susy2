@@ -19,6 +19,12 @@
 /*-------- IMAGES ADAPTABLES -----------*/
 @mixin adaptable-img {
     max-width: 100%;
+    @-moz-document url-prefix() {  
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }
 /*--------- MASQUAGE ELEMENTS ---------*/
 @mixin visuallyhidden {
