@@ -5,13 +5,13 @@
   $logo = '/sites/all/themes/Celony_cyrano/images/logo_celony.gif';
 
   // If your theme is set to display the site name, uncomment this line and replace the value:
-   $site_name = 'Le site du lyc&eacute;e';
+   $site_name = 'Le site du lyc&eacute;e Charlotte Grawitz';
 
   // If your theme is set to *not* display the site name, uncomment this line:
   unset($site_name);
 
   // If your theme is set to display the site slogan, uncomment this line and replace the value:
-  $site_slogan = 'Lyc&eacute;e Priv&eacute; Technologique et Professionnel';
+  $site_slogan = 'Lyc&eacute;e Priv&eacute; Professionnel';
 
   // If your theme is set to *not* display the site slogan, uncomment this line:
   // unset($site_slogan);
@@ -20,8 +20,8 @@
   $content = "<p>Le site rencontre actuellement des probl&egrave;mes techniques, veuillez nous en excuser.</p><hr /><p>Si vous en &ecirc;tes l'administrateur, veuillez v&eacute;rifier les acc&egrave;s &agrave; votre base de donn&eacute;es </p>";
 
   //Texte pour le footer
-  $footer ='<p>Lycée Célony - 4bis Avenue De-Lattre-de-Tassigny 13090 AIX-EN-PROVENCE - Tél: 04.42.23.59.65 - Fax: 04.42.21.33.27<br>
-Tous droits réservés © 2011-2012 Reproduction interdite sans autorisation</p>';
+  $footer ='<p>Lycée Charlotte Grawitz - 20 chemin de Château Gombert - 13013 MARSEILLE - Tél: 04.91.66.63.86 - Fax: 04.91.06.03.97<br>
+Tous droits réservés © 2011 Reproduction interdite sans autorisation</p>';
   ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 
