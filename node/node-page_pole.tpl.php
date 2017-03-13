@@ -29,18 +29,19 @@
          */?>
         <div id="colonne-1" class="layout_3col_all4 page-pole">
        
-             <?php
+    
+                <?php
            global $theme_path;
-              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MSAC.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MRSP.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
          <div id="colonne-2" class="layout_3col_all4 page-pole">
 
-          <?php
+               <?php
            global $theme_path;
-              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MRSP.php');
+              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MSAC.php');
               ?>
 
         
