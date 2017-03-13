@@ -28,31 +28,40 @@
          * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
          */?>
         <div id="colonne-1" class="layout_3col_all4 page-pole">
-       
+       <?php
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_pole_G.php');
+              ?>
     
                 <?php
-           global $theme_path;
-              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MRSP.php');
+//           global $theme_path;
+//              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MRSP.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
          <div id="colonne-2" class="layout_3col_all4 page-pole">
 
-               <?php
+             <?php
            global $theme_path;
-              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MSAC.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_pole_C.php');
               ?>
-
-        
+               <?php
+//           global $theme_path;
+//              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_MSAC.php');
+              ?>
 
         </div>
 
         <!--______________COLONNE 3________________ -->
          <div id="colonne-3" class="layout_3col_all4last page-pole">
-           <?php
+             <?php
            global $theme_path;
-              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_FC.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_pole_D.php');
+              ?>
+           <?php
+//           global $theme_path;
+//              include ($theme_path.'/includes/dedicates_inc/inc_pole_liste_FC.php');
               ?>
         </div>
 
